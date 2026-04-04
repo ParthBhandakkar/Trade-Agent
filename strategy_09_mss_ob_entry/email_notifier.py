@@ -3,7 +3,7 @@ Email Notifier for Strategy 09 (MSS + Order Block) Live Signals.
 
 Sends formatted email alerts when a final signal is generated.
 
-Required environment variables (in algo_trade/.env):
+Required environment variables (in the repository root .env):
   SMTP_SERVER   (default: smtp.gmail.com)
   SMTP_PORT     (default: 587)
   SENDER_EMAIL

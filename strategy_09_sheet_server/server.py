@@ -17,7 +17,6 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 import pandas as pd
 import pytz
 import uvicorn
-from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 
 THIS_DIR = Path(__file__).resolve().parent
@@ -28,15 +27,9 @@ sys.path.insert(0, str(REPO_ROOT))
 sys.path.insert(0, str(STRATEGY_DIR))
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
-_local_env = THIS_DIR / ".env"
-if _local_env.exists():
-    load_dotenv(_local_env)
-_algo_env = REPO_ROOT / "algo_trade" / ".env"
-if _algo_env.exists():
-    load_dotenv(_algo_env, override=False)
-_root_env = REPO_ROOT / ".env"
-if _root_env.exists():
-    load_dotenv(_root_env, override=False)
+from scripts.utils.env_loader import load_root_env              # noqa: E402
+
+load_root_env(REPO_ROOT)
 os.environ["TV_SOURCE_TZ"] = os.getenv("TV_SOURCE_TZ", "Asia/Kolkata").strip() or "Asia/Kolkata"
 
 from crypto_backtester import CRYPTO_PAIRS, CryptoDataFetcher  # noqa: E402

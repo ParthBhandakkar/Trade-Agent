@@ -25,8 +25,8 @@ Take-Profit: Single TP at 1.5R risk-reward.
 Credentials
 ~~~~~~~~~~~
   • Binance Testnet keys: from project root ``.env``
-  • XM MT5 Demo: from ``algo_trade/.env``
-  • Email config: from ``algo_trade/.env``
+  • XM MT5 Demo: from project root ``.env``
+  • Email config: from project root ``.env``
 
 Run
 ---
@@ -53,7 +53,6 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 
 import pandas as pd
 import pytz
-from dotenv import load_dotenv
 
 # ---------------------------------------------------------------------------
 # Path setup
@@ -64,13 +63,10 @@ sys.path.insert(0, str(REPO_ROOT))
 sys.path.insert(0, str(THIS_DIR))
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
-# Load credentials — algo_trade/.env first, then project root .env
-_algo_env = REPO_ROOT / "algo_trade" / ".env"
-if _algo_env.exists():
-    load_dotenv(_algo_env)
-_root_env = REPO_ROOT / ".env"
-if _root_env.exists():
-    load_dotenv(_root_env, override=False)
+# Load credentials — the repository root .env
+from scripts.utils.env_loader import load_root_env               # noqa: E402
+
+load_root_env(REPO_ROOT)
 os.environ["TV_SOURCE_TZ"] = os.getenv("TV_SOURCE_TZ", "Asia/Kolkata").strip() or "Asia/Kolkata"
 
 from strategy import (                                        # noqa: E402

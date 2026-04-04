@@ -28,16 +28,14 @@ import pandas as pd
 import pytz
 import requests
 from tqdm import tqdm
-from dotenv import load_dotenv
 
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
 
-# Load .env from algo_trade/ (where TV credentials live)
-_env_path = Path(__file__).parent.parent / "algo_trade" / ".env"
-if _env_path.exists():
-    load_dotenv(_env_path)
+from scripts.utils.env_loader import load_root_env
+
+load_root_env(Path(__file__).parent.parent)
 
 from strategy import (
     MSSOrderBlockStrategy,

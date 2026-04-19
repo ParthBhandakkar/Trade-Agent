@@ -106,6 +106,18 @@ INR_USD_RATE      = 84.0           # Approximate INR per USD (for lot calc)
 # Hard loss cap — if estimated SL loss > this, tighten SL at open time
 HARD_LOSS_CAP_ENABLED = True
 HARD_LOSS_CAP_AMOUNT  = 3000      # ₹3000 max loss per trade
+HARD_LOSS_CAP_COMMISSION_BUFFER = 500  # ₹500 extra buffer for commission
+
+# London Open manipulation block (07:00-08:00 UTC)
+# Optimization across 90 combos: 07:00-08:00 is the sweet spot.
+# Tighter than 08:30 — saves the 08:17-08:27 winners while still
+# blocking the 07:xx losers.
+LONDON_OPEN_BLOCK_START_UTC = 7 * 60       # 07:00 UTC in minutes
+LONDON_OPEN_BLOCK_END_UTC   = 8 * 60       # 08:00 UTC in minutes
+
+# SELL filter: DISABLED after real-data analysis proved it was curve-fitted.
+# The OB strategy enters on pullbacks, so 1H EMA alignment is inherently
+# violated at entry time.  See generic_filter_analysis.md for details.
 
 # Spread buffer for SL
 CRYPTO_SL_BUFFER_PCT = 0.35       # 0.35% buffer for crypto (wick room)
@@ -183,6 +195,87 @@ def _is_forex_session(now_ist: datetime) -> bool:
     if wd == 0:
         return t >= 90
     return True
+
+
+# ============================================================================
+# LONDON OPEN MANIPULATION BLOCK
+# ============================================================================
+
+def _is_london_open_block(now_utc: datetime) -> bool:
+    """Block entries during London Open first hour (07:00-08:00 UTC).
+
+    Real-data optimization across 90 filter combos: 07:00-08:00 is the
+    sweet spot.  Banks sweep liquidity in the first hour, faking out
+    OB entries.  After 08:00, the real directional move starts.
+    """
+    t = now_utc.hour * 60 + now_utc.minute
+    return LONDON_OPEN_BLOCK_START_UTC <= t <= LONDON_OPEN_BLOCK_END_UTC
+
+
+# ============================================================================
+# CURRENCY CORRELATION GUARD
+# ============================================================================
+
+def _get_exposed_currencies(
+    mt5_exec: Optional["MT5Executor"],
+    binance: Optional["BinanceExecutor"],
+) -> Set[str]:
+    """Return set of currencies already exposed via open positions.
+
+    Prevents correlated-pair blowups like the Apr 7 EURUSD + GBPUSD
+    disaster where 4 positions on 2 correlated pairs lost ₹8,491 in 6 min.
+    """
+    currencies: Set[str] = set()
+
+    if mt5_exec and mt5_exec.connected:
+        for pos in mt5_exec.get_open_positions():
+            sym = pos.symbol.upper().replace("M", "")
+            if len(sym) >= 6:
+                currencies.add(sym[:3])
+                currencies.add(sym[3:6])
+
+    if binance and binance.connected:
+        for pos in binance.get_open_positions():
+            sym = pos['symbol'].upper()
+            # Crypto pairs are like ETHUSDT
+            if sym.endswith("USDT"):
+                currencies.add(sym[:-4])
+                currencies.add("USDT")
+
+    return currencies
+
+
+def _check_correlation_guard(
+    symbol: str, market: str, exposed: Set[str],
+) -> Tuple[bool, str]:
+    """Return (passed, reason).  Fails if base or quote is already exposed."""
+    sym = symbol.upper().replace("M", "")
+    if market == "CRYPTO":
+        if sym.endswith("USDT"):
+            base = sym[:-4]
+        else:
+            base = sym[:3]
+        if base in exposed:
+            return False, f"{base} already exposed in another position"
+    else:
+        if len(sym) >= 6:
+            base, quote = sym[:3], sym[3:6]
+            if base in exposed:
+                return False, f"{base} already exposed in another position"
+            if quote in exposed:
+                return False, f"{quote} already exposed in another position"
+    return True, "No currency overlap"
+
+
+# ============================================================================
+# SELL DIRECTION EXTRA CONFIRMATION — DEPRECATED
+# ============================================================================
+# This filter was removed after real-data analysis proved it was curve-fitted.
+# The OB strategy enters on pullbacks into Order Blocks — by definition, at
+# entry time the 1H close is on the "wrong" side of EMA21.  Any 1H EMA filter
+# fights the core strategy logic.  Tested on 42 trades: it blocked 24 of 28
+# winners.  See results/generic_filter_analysis.md for full details.
+# The function is preserved below for reference only (not called anywhere).
 
 
 # ============================================================================
@@ -884,6 +977,7 @@ class MT5Executor:
     """Thin wrapper around MetaTrader5 for XM Global demo."""
 
     def __init__(self):
+        self.mt5 = None
         self.login = int(os.getenv("XM_MT5_LOGIN", "0"))
         self.password = os.getenv("XM_MT5_PASSWORD", "")
         self.server = os.getenv("XM_MT5_SERVER", "XMGlobal-MT5 3")
@@ -892,6 +986,7 @@ class MT5Executor:
         self._last_keepalive_ts: float = 0.0
 
     def connect(self) -> bool:
+        self.connected = False
         try:
             import MetaTrader5 as mt5
             self.mt5 = mt5
@@ -921,14 +1016,14 @@ class MT5Executor:
             return False
 
     def get_open_position_count(self) -> int:
-        if not self.connected:
+        if not self.connected or self.mt5 is None:
             return 0
         positions = self.mt5.positions_get()
         return len(positions) if positions else 0
 
     def ensure_connected(self) -> bool:
         """Re-connect if the connection was lost."""
-        if self.connected:
+        if self.connected and self.mt5 is not None:
             try:
                 info = self.mt5.account_info()
                 if info is not None:
@@ -940,6 +1035,8 @@ class MT5Executor:
                 self.mt5.shutdown()
             except Exception:
                 pass
+        else:
+            self.connected = False
         logger.info("Reconnecting to MT5...")
         return self.connect()
 
@@ -947,9 +1044,20 @@ class MT5Executor:
         """Periodic MT5 health check to reduce silent logouts."""
         now_ts = time.time()
         if (now_ts - self._last_keepalive_ts) < interval_sec:
-            return self.connected
+            return self.connected and self.mt5 is not None
         self._last_keepalive_ts = now_ts
         return self.ensure_connected()
+
+    def get_open_positions(self):
+        """Return current MT5 positions or an empty list if unavailable."""
+        if not self.connected or self.mt5 is None:
+            return []
+        try:
+            positions = self.mt5.positions_get()
+            return positions or []
+        except Exception as e:
+            logger.warning(f"MT5 positions_get error: {e}")
+            return []
 
     def _normalize_symbol(self, symbol: str) -> str:
         """Convert OANDA-style 'EURUSD' to MT5-style if needed.
@@ -975,6 +1083,8 @@ class MT5Executor:
             return 1.0 / INR_USD_RATE
 
         mt5 = self.mt5
+        if mt5 is None:
+            return None
         direct = f"{f}{t}"
         if mt5.symbol_select(direct, True):
             tick = mt5.symbol_info_tick(direct)
@@ -1316,7 +1426,7 @@ class MT5Executor:
         Returns a positive number representing the loss amount, or None on error.
         """
         mt5 = self.mt5
-        if not self.connected:
+        if not self.connected or mt5 is None:
             return None
         try:
             sym = self._normalize_symbol(symbol)
@@ -1346,7 +1456,7 @@ class MT5Executor:
         Returns the new (tighter) SL price, or original_sl if no cap needed.
         """
         mt5 = self.mt5
-        if not self.connected:
+        if not self.connected or mt5 is None:
             return original_sl
 
         sym = self._normalize_symbol(symbol)
@@ -1420,7 +1530,7 @@ class MT5Executor:
     def modify_sl(self, symbol: str, new_sl: float, ticket: int = 0) -> bool:
         """Modify SL of an open MT5 position (keep existing TP)."""
         mt5 = self.mt5
-        if not self.connected:
+        if not self.connected or mt5 is None:
             return False
         try:
             sym = self._normalize_symbol(symbol)
@@ -1650,9 +1760,9 @@ def _check_trailing_sl(
     #       positions can be merged/replaced in MT5 netting mode, changing
     #       the magic number, or the user may have manually placed trades
     #       they also want trailed.
-    if mt5_exec and mt5_exec.connected:
+    if mt5_exec:
         try:
-            positions = mt5_exec.mt5.positions_get()
+            positions = mt5_exec.get_open_positions()
             open_syms = set()
             if positions:
                 for pos in positions:
@@ -1798,6 +1908,13 @@ def main() -> int:
                     help="Disable trailing SL")
     ap.add_argument("--trailing-sl-step", type=float, default=0,
                     help="INR profit step for trailing SL (default: auto = margin used)")
+    # ── London open block ─────────────────────────────────────────
+    ap.add_argument("--no-london-block", action="store_true",
+                    help="Disable London Open manipulation block (07:00-08:00 UTC)")
+    # ── Correlation guard (OFF by default — optimization shows net negative)
+    ap.add_argument("--correlation-guard", action="store_true",
+                    help="Enable currency correlation guard (OFF by default, costs more winners than it saves)")
+    # SELL extra confirmation: REMOVED (curve-fitted, not generic)
     args = ap.parse_args()
 
     if args.debug:
@@ -1883,6 +2000,8 @@ def main() -> int:
     else:
         _tsl_label = f"Dynamic (Crypto: ₹{args.crypto_margin * INR_USD_RATE:.0f}, Forex: ₹{args.forex_margin:.0f})"
     print(f"  Trailing SL:    {_tsl_label}")
+    print(f"  London Block:   {'OFF' if args.no_london_block else '07:00-08:00 UTC blocked'}")
+    print(f"  Correl Guard:   {'Max 1 pos per currency' if args.correlation_guard else 'OFF'}")
     print("═" * 62 + "\n")
 
     # ── Daily P/L tracker (crypto) ────────────────────────────────
@@ -2272,7 +2391,6 @@ def main() -> int:
                         if not kz_result.passed:
                             logger.info(f"  [{symbol}] KILLZONE REJECT: {kz_result.reason}")
                             print(f"  ⊘ [{symbol}] {direction_str} rejected: {kz_result.reason}")
-                            # Log as filtered signal
                             trade_record = {
                                 "timestamp_ist": now_ist.strftime("%Y-%m-%d %H:%M:%S IST"),
                                 "market": market,
@@ -2290,6 +2408,60 @@ def main() -> int:
                             continue
                         else:
                             logger.info(f"  [{symbol}] Killzone OK: {kz_result.reason}")
+
+                    # ── LONDON OPEN BLOCK (07:00-08:00 UTC) ────────
+                    if not args.no_london_block:
+                        if _is_london_open_block(now_utc):
+                            _lo_reason = (
+                                f"London Open block (07:00-08:00 UTC) — "
+                                f"manipulation phase, banks sweeping liquidity"
+                            )
+                            logger.info(f"  [{symbol}] LONDON BLOCK: {_lo_reason}")
+                            print(f"  ⊘ [{symbol}] {direction_str} rejected: {_lo_reason}")
+                            _append_jsonl(trades_log, {
+                                "timestamp_ist": now_ist.strftime("%Y-%m-%d %H:%M:%S IST"),
+                                "market": market, "symbol": symbol,
+                                "direction": direction_str,
+                                "entry_price": ob_entry.entry_price,
+                                "quality": quality,
+                                "trade_result": {
+                                    "success": False,
+                                    "error": f"London Open block: {_lo_reason}",
+                                },
+                            })
+                            continue
+
+                    # ── CORRELATION GUARD (opt-in) ────────────────
+                    if args.correlation_guard:
+                        _exposed = _get_exposed_currencies(mt5_exec, binance)
+                        _corr_ok, _corr_reason = _check_correlation_guard(
+                            symbol, market, _exposed,
+                        )
+                        if not _corr_ok:
+                            logger.info(f"  [{symbol}] CORRELATION BLOCK: {_corr_reason}")
+                            print(f"  ⊘ [{symbol}] {direction_str} rejected: {_corr_reason}")
+                            _append_jsonl(trades_log, {
+                                "timestamp_ist": now_ist.strftime("%Y-%m-%d %H:%M:%S IST"),
+                                "market": market, "symbol": symbol,
+                                "direction": direction_str,
+                                "entry_price": ob_entry.entry_price,
+                                "quality": quality,
+                                "trade_result": {
+                                    "success": False,
+                                    "error": f"Correlation: {_corr_reason}",
+                                },
+                            })
+                            continue
+                        else:
+                            logger.info(f"  [{symbol}] Correlation OK: {_corr_reason}")
+
+                    # ── SELL EXTRA CONFIRMATION ─────────────────
+                    # DISABLED: Real-data analysis proved this was curve-fitted
+                    # to a specific market regime (Apr 2026 USD bull).
+                    # The OB strategy enters on pullbacks, so by design the
+                    # 1H close is on the "wrong" side of EMA21 at entry.
+                    # Keeping the function for future reference but not using it.
+                    # See: generic_filter_analysis.md for full reasoning.
 
                     # Smart SL
                     sl_price, sl_reason = compute_smart_sl(
@@ -2404,13 +2576,23 @@ def main() -> int:
                                         symbol, direction_str, lot,
                                         ob_entry.entry_price, sl_price
                                     )
-                                    if est_loss is not None and est_loss > HARD_LOSS_CAP_AMOUNT:
+                                    # Use a tighter effective cap that accounts
+                                    # for commission so the TOTAL loss stays
+                                    # within HARD_LOSS_CAP_AMOUNT.
+                                    effective_cap = max(
+                                        100,
+                                        HARD_LOSS_CAP_AMOUNT - HARD_LOSS_CAP_COMMISSION_BUFFER,
+                                    )
+                                    if est_loss is not None and est_loss > effective_cap:
                                         final_sl = mt5_exec.calculate_capped_sl(
                                             symbol, direction_str, lot,
                                             ob_entry.entry_price, sl_price,
-                                            HARD_LOSS_CAP_AMOUNT
+                                            effective_cap
                                         )
-                                        print(f"     ⚠ SL capped: {sl_price:.5f} → {final_sl:.5f} (₹{HARD_LOSS_CAP_AMOUNT} cap)")
+                                        print(
+                                            f"     ⚠ SL capped: {sl_price:.5f} → {final_sl:.5f} "
+                                            f"(₹{HARD_LOSS_CAP_AMOUNT} cap, ₹{HARD_LOSS_CAP_COMMISSION_BUFFER} commission buffer)"
+                                        )
 
                                 trade_result = mt5_exec.execute_with_retries(
                                     symbol, direction_str,

@@ -17,6 +17,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 import pandas as pd
 import pytz
 import uvicorn
+from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 
 THIS_DIR = Path(__file__).resolve().parent
@@ -30,6 +31,7 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 from scripts.utils.env_loader import load_root_env              # noqa: E402
 
 load_root_env(REPO_ROOT)
+load_dotenv(THIS_DIR / ".env", override=True)
 os.environ["TV_SOURCE_TZ"] = os.getenv("TV_SOURCE_TZ", "Asia/Kolkata").strip() or "Asia/Kolkata"
 
 from crypto_backtester import CRYPTO_PAIRS, CryptoDataFetcher  # noqa: E402
@@ -70,6 +72,12 @@ CRYPTO_SYMBOL_BLACKLIST = {
 }
 _MIN_4H_BARS_FOR_EMA = 50
 
+# London Open manipulation block (07:00-08:00 UTC)
+# Real-data optimization across 90 combos: 07:00-08:00 is the sweet spot.
+# Banks sweep liquidity in the first hour, faking out OB entries.
+LONDON_BLOCK_START_UTC = 7 * 60   # 07:00 UTC in minutes
+LONDON_BLOCK_END_UTC   = 8 * 60   # 08:00 UTC in minutes
+
 
 @dataclass
 class BiasTrack:
@@ -109,6 +117,7 @@ class ServiceConfig:
     google_worksheet_title: str
     google_service_account_file: Optional[str]
     google_service_account_json: Optional[str]
+    no_london_block: bool
 
 
 def _env_bool(name: str, default: bool = False) -> bool:
@@ -179,6 +188,7 @@ def load_config() -> ServiceConfig:
         google_worksheet_title=google_worksheet_title,
         google_service_account_file=google_service_account_file,
         google_service_account_json=google_service_account_json,
+        no_london_block=_env_bool("SHEET_NO_LONDON_BLOCK", False),
     )
 
 
@@ -192,6 +202,17 @@ def _is_forex_session(now_ist: datetime) -> bool:
     if weekday == 0:
         return total_minutes >= 90
     return True
+
+
+def _is_london_open_block(now_utc: datetime) -> bool:
+    """Block entries during London Open first hour (07:00-08:00 UTC).
+
+    Real-data optimization across 90 filter combos: 07:00-08:00 is the
+    sweet spot.  Banks sweep liquidity in the first hour, faking out
+    OB entries.  After 08:00, the real directional move starts.
+    """
+    t = now_utc.hour * 60 + now_utc.minute
+    return LONDON_BLOCK_START_UTC <= t <= LONDON_BLOCK_END_UTC
 
 
 def _bias_key(bias: DailyBias) -> str:
@@ -501,6 +522,10 @@ class Strategy09SheetService:
             "  Blacklist:      %s",
             "OFF" if self.config.no_blacklist else f"{len(CRYPTO_SYMBOL_BLACKLIST)} symbols",
         )
+        logger.info(
+            "  London Block:   %s",
+            "OFF" if self.config.no_london_block else "07:00-08:00 UTC blocked",
+        )
         logger.info("  Log Dir:        %s", self.log_dir)
         logger.info("=" * 62)
 
@@ -529,6 +554,7 @@ class Strategy09SheetService:
             "killzone_filter": not self.config.no_killzone,
             "ema_filter": not self.config.no_ema_filter,
             "blacklist_filter": not self.config.no_blacklist,
+            "london_block": not self.config.no_london_block,
             "log_dir": str(self.log_dir),
             "state_file": str(self.state_file),
         }
@@ -785,6 +811,34 @@ class Strategy09SheetService:
                         )
                         continue
 
+                # ── London Open Block (07:00-08:00 UTC) ──────────
+                london_blocked = False
+                london_reason = "London block disabled"
+                if not self.config.no_london_block:
+                    now_utc_check = datetime.now(UTC)
+                    if _is_london_open_block(now_utc_check):
+                        london_blocked = True
+                        london_reason = (
+                            f"London Open block (07:00-08:00 UTC) — "
+                            f"manipulation phase, banks sweeping liquidity"
+                        )
+                        track.last_rejected_tap = self._normalize_utc(ob_entry.timestamp)
+                        track.alerted = False
+                        track.completed = False
+                        self._log_rejection(
+                            now_ist=now_ist,
+                            market=market,
+                            symbol=symbol,
+                            direction=direction_str,
+                            entry_price=ob_entry.entry_price,
+                            quality=quality,
+                            signal_time_ist=sig_json.get("signal_datetime_ist", ""),
+                            reason=f"London Block: {london_reason}",
+                        )
+                        continue
+                    else:
+                        london_reason = "Outside London Open block"
+
                 sl_price, sl_reason = compute_smart_sl(
                     ob=ob_entry.order_block,
                     bias_direction=track.bias.direction,
@@ -874,6 +928,8 @@ class Strategy09SheetService:
                     sl_reason=sl_reason,
                     ema_detail=ema_detail,
                     killzone_result=killzone_result,
+                    london_blocked=london_blocked,
+                    london_reason=london_reason,
                 )
 
                 try:
@@ -1018,6 +1074,8 @@ class Strategy09SheetService:
         sl_reason: str,
         ema_detail: str,
         killzone_result: FilterResult,
+        london_blocked: bool = False,
+        london_reason: str = "",
     ) -> Dict[str, Any]:
         ob_entry = signal_json.get("ob_entry", {})
         daily_bias = signal_json.get("daily_bias", {})
@@ -1041,6 +1099,8 @@ class Strategy09SheetService:
             "take_profit": tp_price,
             "risk_per_unit": abs(float(entry_price) - float(sl_price)),
             "sl_reason": sl_reason,
+            "london_block_status": "BLOCKED" if london_blocked else "PASS",
+            "london_block_reason": london_reason,
             "killzone_status": "PASS" if killzone_result.passed else "FAIL",
             "killzone_reason": killzone_result.reason,
             "ema_filter_status": "SKIPPED" if self.config.no_ema_filter else "PASS",
@@ -1186,6 +1246,88 @@ def status(request: Request) -> Dict[str, Any]:
         "runtime": service.snapshot(),
         "config": service.config_summary(),
     }
+
+
+@app.post("/test")
+@app.get("/test")
+async def test_sheet_write(request: Request) -> Dict[str, Any]:
+    """Write a random test entry to verify Google Sheets connectivity.
+
+    This also ensures headers are present — if missing, they are auto-created
+    by the GoogleSheetsTradeLogger._ensure_headers() method.
+    """
+    import random
+    service: Strategy09SheetService = request.app.state.sheet_service
+
+    now_ist = datetime.now(IST)
+    test_symbols = ["EURUSD", "GBPJPY", "XAUUSD", "BTCUSD", "ETHUSD"]
+    test_directions = ["bullish", "bearish"]
+    symbol = random.choice(test_symbols)
+    direction = random.choice(test_directions)
+    entry_price = round(random.uniform(1.0, 2000.0), 5)
+    sl_price = round(entry_price * (0.995 if direction == "bullish" else 1.005), 5)
+    tp_price = round(entry_price * (1.01 if direction == "bullish" else 0.99), 5)
+
+    test_record = {
+        "record_id": f"TEST_{now_ist.strftime('%Y%m%d_%H%M%S')}_{random.randint(1000,9999)}",
+        "logged_at_ist": now_ist.strftime("%Y-%m-%d %H:%M:%S IST"),
+        "detected_at_ist": now_ist.strftime("%Y-%m-%d %H:%M:%S IST"),
+        "signal_time_ist": now_ist.strftime("%Y-%m-%d %H:%M:%S IST"),
+        "market": "TEST",
+        "symbol": symbol,
+        "direction": direction,
+        "trade_status": "TEST_ENTRY",
+        "source_strategy": "strategy_09_mss_ob_entry",
+        "delivery_target": service.config.google_worksheet_title,
+        "quality_score": random.randint(60, 95),
+        "risk_reward": 1.5,
+        "entry_price": entry_price,
+        "stop_loss": sl_price,
+        "take_profit": tp_price,
+        "risk_per_unit": abs(entry_price - sl_price),
+        "sl_reason": "TEST — smart SL on OB boundary",
+        "london_block_status": "PASS",
+        "london_block_reason": "Test entry — outside London block",
+        "killzone_status": "PASS",
+        "killzone_reason": "Test entry — killzone check skipped",
+        "ema_filter_status": "PASS",
+        "ema_filter_detail": "Test entry — EMA filter skipped",
+        "bias_direction": direction,
+        "bias_confidence": "high",
+        "bias_reason": "TEST — 4H liquidity sweep",
+        "bias_sweep_time_ist": now_ist.strftime("%Y-%m-%d %H:%M:%S IST"),
+        "bias_source_time_ist": now_ist.strftime("%Y-%m-%d %H:%M:%S IST"),
+        "mss_time_ist": now_ist.strftime("%Y-%m-%d %H:%M:%S IST"),
+        "mss_break_price": entry_price,
+        "mss_confirmation_close": entry_price,
+        "mss_details": "TEST MSS confirmation",
+        "ob_time_ist": now_ist.strftime("%Y-%m-%d %H:%M:%S IST"),
+        "ob_top": round(entry_price * 1.002, 5),
+        "ob_bottom": round(entry_price * 0.998, 5),
+        "ob_body_top": round(entry_price * 1.001, 5),
+        "ob_body_bottom": round(entry_price * 0.999, 5),
+        "ob_fib_level": round(random.uniform(0.618, 0.786), 3),
+        "ob_in_ote_zone": True,
+        "vm_hostname": service.hostname,
+        "raw_signal_json": {"test": True, "timestamp": now_ist.isoformat()},
+    }
+
+    try:
+        result = service.sheet_logger.append_record(test_record)
+        return {
+            "success": True,
+            "message": f"Test entry written to sheet '{service.config.google_worksheet_title}'",
+            "record_id": test_record["record_id"],
+            "symbol": symbol,
+            "direction": direction,
+            "sheet_result": result,
+        }
+    except Exception as exc:
+        return {
+            "success": False,
+            "error": str(exc),
+            "message": "Failed to write test entry to Google Sheets",
+        }
 
 
 if __name__ == "__main__":

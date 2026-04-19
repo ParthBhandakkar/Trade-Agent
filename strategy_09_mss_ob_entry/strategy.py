@@ -124,8 +124,8 @@ class MSSOrderBlockStrategy:
         lookback_4h: int = 50,
         lookback_1h: int = 100,
         lookback_15m: int = 100,
-        ote_fib_low: float = 0.50,
-        ote_fib_high: float = 0.886,
+        ote_fib_low: float = 0.618,
+        ote_fib_high: float = 0.786,
         risk_reward_target: float = 2.0,
         max_ob_age_candles: int = 50,
     ):

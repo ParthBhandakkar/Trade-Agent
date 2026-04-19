@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import time
+from datetime import date, datetime
 from typing import Any, Dict, List, Optional, Sequence
 
 import gspread
@@ -27,6 +28,8 @@ DEFAULT_TRADE_HEADERS: List[str] = [
     "take_profit",
     "risk_per_unit",
     "sl_reason",
+    "london_block_status",
+    "london_block_reason",
     "killzone_status",
     "killzone_reason",
     "ema_filter_status",
@@ -187,6 +190,29 @@ class GoogleSheetsTradeLogger:
     def _normalize_value(value: Any) -> Any:
         if value is None:
             return ""
-        if isinstance(value, (dict, list)):
-            return json.dumps(value, default=str)
+        if isinstance(value, (dict, list, tuple, set)):
+            return json.dumps(value, default=GoogleSheetsTradeLogger._json_default)
+
+        if hasattr(value, "item") and callable(getattr(value, "item")):
+            try:
+                value = value.item()
+            except Exception:
+                pass
+
+        if isinstance(value, (str, int, float, bool)):
+            return value
+        if isinstance(value, (datetime, date)):
+            return value.isoformat()
+
+        return str(value)
+
+    @staticmethod
+    def _json_default(value: Any) -> Any:
+        if hasattr(value, "item") and callable(getattr(value, "item")):
+            try:
+                return value.item()
+            except Exception:
+                pass
+        if isinstance(value, (datetime, date)):
+            return value.isoformat()
         return value

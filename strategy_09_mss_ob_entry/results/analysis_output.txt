@@ -1,0 +1,257 @@
+﻿======================================================================
+  STRATEGY 09 ÔÇö MSS + OB ENTRY ÔÇö DEEP TRADE ANALYSIS
+======================================================================
+
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  OVERALL STATISTICS
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  Total Trades:      42
+  Winners:           29 (69.0%)
+  Losers:            13 (31.0%)
+  Total P/L:         Ôé╣29,126.57
+  Total Commission:  Ôé╣-6,320.80
+  Net P/L:           Ôé╣22,805.77
+  Avg Winner:        Ôé╣2,059.41
+  Avg Loser:         Ôé╣-2,353.56
+  Max Win:           Ôé╣7,602.06
+  Max Loss:          Ôé╣-4,828.16
+  Risk/Reward Ratio: 0.88
+
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  PER-TRADE ANALYSIS
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  TRADE OUTCOME CATEGORIES
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+  ­ƒö┤ QUICK STOP-OUTS (< 10 min): 5 trades
+     2026-04-02 14:42 | AUDCAD     | SELL | P/L: Ôé╣    -883 | Duration: 2m
+     2026-04-07 08:08 | EURUSD     | SELL | P/L: Ôé╣  -2,453 | Duration: 6m
+     2026-04-07 08:08 | GBPUSD     | SELL | P/L: Ôé╣  -2,541 | Duration: 6m
+     2026-04-07 08:11 | EURUSD     | SELL | P/L: Ôé╣  -1,753 | Duration: 4m
+     2026-04-07 08:11 | GBPUSD     | SELL | P/L: Ôé╣  -1,744 | Duration: 3m
+
+  ­ƒƒó TRAILING SL WINNERS (SL hit in profit): 24 trades
+     2026-04-02 09:08 | NZDCHF     | SELL | P/L: Ôé╣     502 | Duration: 13m
+     2026-04-02 13:37 | GBPAUD     | BUY  | P/L: Ôé╣     497 | Duration: 4m
+     2026-04-02 13:57 | AUDJPY     | SELL | P/L: Ôé╣     501 | Duration: 9m
+     2026-04-02 14:07 | GBPNZD     | BUY  | P/L: Ôé╣   1,497 | Duration: 51m
+     2026-04-02 14:42 | NZDCAD     | SELL | P/L: Ôé╣     494 | Duration: 11m
+     2026-04-02 16:47 | EURAUD     | BUY  | P/L: Ôé╣     505 | Duration: 1111m
+     2026-04-03 16:07 | EURCAD     | BUY  | P/L: Ôé╣   4,001 | Duration: 3832m
+     2026-04-06 14:43 | AUDCHF     | BUY  | P/L: Ôé╣   1,486 | Duration: 726m
+     2026-04-06 14:43 | AUDCHF     | BUY  | P/L: Ôé╣   1,985 | Duration: 936m
+     2026-04-07 09:01 | USDJPY     | BUY  | P/L: Ôé╣   1,501 | Duration: 59m
+     2026-04-07 09:03 | USDJPY     | BUY  | P/L: Ôé╣   1,501 | Duration: 58m
+     2026-04-09 08:27 | GBPAUD     | SELL | P/L: Ôé╣   1,002 | Duration: 232m
+     2026-04-09 11:03 | GBPCAD     | BUY  | P/L: Ôé╣   1,001 | Duration: 1492m
+     2026-04-09 13:57 | EURCHF     | BUY  | P/L: Ôé╣   1,002 | Duration: 53m
+     2026-04-10 14:22 | EURCHF     | BUY  | P/L: Ôé╣   4,503 | Duration: 29m
+     2026-04-10 14:36 | EURGBP     | BUY  | P/L: Ôé╣   2,004 | Duration: 3503m
+     2026-04-15 09:07 | CADJPY     | BUY  | P/L: Ôé╣   1,494 | Duration: 95m
+     2026-04-16 07:37 | CHFJPY     | BUY  | P/L: Ôé╣   1,499 | Duration: 383m
+     2026-04-16 09:33 | EURGBP     | SELL | P/L: Ôé╣   1,994 | Duration: 246m
+     2026-04-16 09:36 | EURGBP     | SELL | P/L: Ôé╣     999 | Duration: 258m
+     2026-04-16 14:09 | EURCHF     | BUY  | P/L: Ôé╣   2,491 | Duration: 67m
+     2026-04-16 14:38 | GBPCHF     | BUY  | P/L: Ôé╣   1,999 | Duration: 23m
+     2026-04-16 14:44 | GBPCHF     | BUY  | P/L: Ôé╣   2,999 | Duration: 34m
+     2026-04-17 08:17 | NZDJPY     | BUY  | P/L: Ôé╣   2,006 | Duration: 28m
+
+  ­ƒÄ» TAKE-PROFIT HITS: 4 trades
+     2026-04-02 09:48 | GBPNZD     | BUY  | P/L: Ôé╣   3,072 | Duration: 128m
+     2026-04-15 10:39 | ETHUSD     | BUY  | P/L: Ôé╣   1,415 | Duration: 6m
+     2026-04-17 10:47 | NZDUSD     | BUY  | P/L: Ôé╣   7,602 | Duration: 121m
+     2026-04-17 10:47 | GBPNZD     | SELL | P/L: Ôé╣   5,172 | Duration: 170m
+
+  ­ƒƒí REGULAR SL LOSSES (> 10 min): 8 trades
+     2026-04-06 07:57 | USDCAD     | BUY  | P/L: Ôé╣  -1,572 | Duration: 315m | SL%: 0.083%
+     2026-04-13 14:03 | EURCHF     | BUY  | P/L: Ôé╣  -4,828 | Duration: 154m | SL%: 0.206%
+     2026-04-16 07:40 | USDCHF     | SELL | P/L: Ôé╣  -2,983 | Duration: 46m | SL%: 0.150%
+     2026-04-16 08:23 | USDJPY     | SELL | P/L: Ôé╣  -2,817 | Duration: 328m | SL%: 0.124%
+     2026-04-16 08:24 | USDJPY     | SELL | P/L: Ôé╣  -2,370 | Duration: 328m | SL%: 0.119%
+     2026-04-16 08:28 | CHFJPY     | BUY  | P/L: Ôé╣  -3,211 | Duration: 175m | SL%: 0.169%
+     2026-04-16 13:58 | BTCUSD     | BUY  | P/L: Ôé╣  -3,031 | Duration: 26m | SL%: 0.412%
+     2026-04-16 14:30 | EURGBP     | SELL | P/L: Ôé╣    -410 | Duration: 20m | SL%: 0.021%
+
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  SYMBOL PERFORMANCE BREAKDOWN
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+  Symbol       Trades  Wins    WR%    Total P/L    Avg P/L  Avg Dur
+  ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  GBPUSD            2     0   0.0% Ôé╣    -4,284 Ôé╣  -2,142      5m
+  EURUSD            2     0   0.0% Ôé╣    -4,206 Ôé╣  -2,103      5m
+  BTCUSD            1     0   0.0% Ôé╣    -3,031 Ôé╣  -3,031     26m
+  USDCHF            1     0   0.0% Ôé╣    -2,983 Ôé╣  -2,983     46m
+  USDJPY            4     2  50.0% Ôé╣    -2,186 Ôé╣    -546    193m
+  CHFJPY            2     1  50.0% Ôé╣    -1,712 Ôé╣    -856    279m
+  USDCAD            1     0   0.0% Ôé╣    -1,572 Ôé╣  -1,572    315m
+  AUDCAD            1     0   0.0% Ôé╣      -883 Ôé╣    -883      2m
+  NZDCAD            1     1 100.0% Ôé╣       494 Ôé╣     494     11m
+  AUDJPY            1     1 100.0% Ôé╣       501 Ôé╣     501      9m
+  NZDCHF            1     1 100.0% Ôé╣       502 Ôé╣     502     13m
+  EURAUD            1     1 100.0% Ôé╣       505 Ôé╣     505   1111m
+  GBPCAD            1     1 100.0% Ôé╣     1,001 Ôé╣   1,001   1492m
+  ETHUSD            1     1 100.0% Ôé╣     1,415 Ôé╣   1,415      6m
+  GBPAUD            2     2 100.0% Ôé╣     1,500 Ôé╣     750    118m
+  NZDJPY            1     1 100.0% Ôé╣     2,006 Ôé╣   2,006     28m
+  EURCHF            4     3  75.0% Ôé╣     3,168 Ôé╣     792     76m
+  AUDCHF            2     2 100.0% Ôé╣     3,471 Ôé╣   1,735    831m
+  EURCAD            1     1 100.0% Ôé╣     4,001 Ôé╣   4,001   3832m
+  CADJPY            2     2 100.0% Ôé╣     4,494 Ôé╣   2,247    193m
+  EURGBP            4     3  75.0% Ôé╣     4,587 Ôé╣   1,147   1007m
+  GBPCHF            2     2 100.0% Ôé╣     4,999 Ôé╣   2,499     28m
+  NZDUSD            1     1 100.0% Ôé╣     7,602 Ôé╣   7,602    121m
+  GBPNZD            3     3 100.0% Ôé╣     9,740 Ôé╣   3,247    116m
+
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  TIME-BASED PATTERNS (Hour of Entry UTC)
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+  Hour Trades  Wins    WR%    Total P/L
+  ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+     7      3     1  33.3% Ôé╣    -3,056
+     8     10     3  30.0% Ôé╣   -10,881
+     9      7     7 100.0% Ôé╣    11,062
+    10      3     3 100.0% Ôé╣    14,188
+    11      1     1 100.0% Ôé╣     1,001
+    13      4     3  75.0% Ôé╣    -1,030
+    14     12     9  75.0% Ôé╣    13,337
+    16      2     2 100.0% Ôé╣     4,505
+
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  DIRECTION ANALYSIS
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+   BUY: 26 trades | 22 wins (84.6%) | Total P/L: Ôé╣36,417
+  SELL: 16 trades | 7 wins (43.8%) | Total P/L: Ôé╣-7,290
+
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  STOP-LOSS DISTANCE ANALYSIS
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+  Avg SL Distance: 0.113%
+  Median SL Dist:  0.095%
+
+  Winners avg SL%: 0.103%
+  Losers avg SL%:  0.135%
+
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  CONSECUTIVE LOSS STREAKS
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  Max consecutive losses: 4 (Ôé╣-8,491)
+  Worst streak by P/L:   4 losses (Ôé╣-11,382)
+
+======================================================================
+  ICT / SMC / PRICE ACTION ANALYSIS & RECOMMENDATIONS
+======================================================================
+
+  ÔòÉÔòÉÔòÉ KEY FINDINGS ÔòÉÔòÉÔòÉ
+
+  1. QUICK STOP-OUTS (5 trades):
+     These are entries where price immediately ran against the position.
+     Root cause: Entering during high-momentum moves without waiting for 
+     displacement to settle. In ICT terms, entering during the "expansion"
+     phase rather than the "retracement" phase.
+
+  2. SL HIT THEN PRICE REVERSED:
+     Trades where SL was hit but price subsequently moved to where TP was.
+     This indicates the SL was too tight relative to the Order Block zone.
+     
+  3. COUNTER-TREND ENTRIES:
+     Some entries are taken against the HTF (Higher Time Frame) trend.
+     The 4H EMA filter should catch these, but the OTE zone definition
+     may be too wide (0.50 - 0.886), allowing entries in weak zones.
+
+  ÔòÉÔòÉÔòÉ SPECIFIC RECOMMENDATIONS ÔòÉÔòÉÔòÉ
+
+  A. TIGHTEN OTE ZONE: 
+     Current: 0.50 - 0.886 (very wide)
+     Proposed: 0.618 - 0.786 (classic ICT OTE)
+     Impact: Fewer but higher-quality entries
+
+  B. ADD SESSION/TIME FILTER:
+     - Avoid entries in the first 30 min of a session (expansion phase)
+     - Best entries during London-NY overlap (13:00-17:00 UTC)
+
+  C. ADD DISPLACEMENT FILTER:
+     Before entering on an OB tap, check that the displacement move 
+     (the impulse that created the OB) had:
+     - At least 2x the avg candle range
+     - A clean FVG formed in the displacement
+
+  D. ADD MULTI-TF CONFIRMATION:
+     - 1H must show a clear BOS/MSS before entering on 15M OB
+     - 5M entry candle should be a rejection candle (pin bar/engulfing)
+
+  E. DYNAMIC SL SIZING:
+     - For JPY pairs: wider SL (they have larger pip movements)
+     - For major pairs: tighter SL possible
+     - Consider ATR-based SL instead of fixed OB extreme
+
+
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  WHAT-IF SCENARIOS
+ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+  Scenario                                      Trades    WR%          P/L
+  ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  Current (all trades)                              42  69.0% Ôé╣    29,127
+  Remove quick SL (<10min)                          37  78.4% Ôé╣    38,500
+  Only trades with SL% <= median                    21  76.2% Ôé╣    13,197
+  Only London/NY hours (8-16 UTC)                   39  71.8% Ôé╣    32,183
+
+  ­ƒôä Detailed results saved to: D:\WorkZera\Projects\yt_learning\strategy_09_mss_ob_entry\results\deep_analysis_results.json
+
+======================================================================
+  PER-TRADE VERDICT: KEEP / FILTER / MODIFY
+======================================================================
+
+  Ticket       Symbol        Dir        P/L    Dur Verdict    Reason
+  ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+  1042640024   NZDCHF       SELL Ôé╣     502    13m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1042876863   GBPNZD        BUY Ôé╣   3,072   128m KEEP Ô£ô     Clean TP hit ÔÇö strategy working
+  1044562087   GBPAUD        BUY Ôé╣     497     4m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1044801344   AUDJPY       SELL Ôé╣     501     9m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1044918126   GBPNZD        BUY Ôé╣   1,497    51m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1045286518   AUDCAD       SELL Ôé╣    -883     2m FILTER     Quick SL < 10min ÔÇö add displacement confirmation
+  1045287991   NZDCAD       SELL Ôé╣     494    11m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1046307259   EURAUD        BUY Ôé╣     505  1111m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1047895385   EURCAD        BUY Ôé╣   4,001  3832m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1052341725   USDCAD        BUY Ôé╣  -1,572   315m MODIFY     Long hold loss ÔÇö add time-based exit after 4h
+  1055090649   AUDCHF        BUY Ôé╣   1,486   726m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1055091016   AUDCHF        BUY Ôé╣   1,985   936m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1059472654   EURUSD       SELL Ôé╣  -2,453     6m FILTER     Quick SL < 10min ÔÇö add displacement confirmation
+  1059472893   GBPUSD       SELL Ôé╣  -2,541     6m FILTER     Quick SL < 10min ÔÇö add displacement confirmation
+  1059481827   EURUSD       SELL Ôé╣  -1,753     4m FILTER     Quick SL < 10min ÔÇö add displacement confirmation
+  1059483729   GBPUSD       SELL Ôé╣  -1,744     3m FILTER     Quick SL < 10min ÔÇö add displacement confirmation
+  1059860509   USDJPY        BUY Ôé╣   1,501    59m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1059869379   USDJPY        BUY Ôé╣   1,501    58m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1074951684   GBPAUD       SELL Ôé╣   1,002   232m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1075704758   GBPCAD        BUY Ôé╣   1,001  1492m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1076946507   EURCHF        BUY Ôé╣   1,002    53m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1083550917   EURCHF        BUY Ôé╣   4,503    29m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1083671633   EURGBP        BUY Ôé╣   2,004  3503m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1091405657   EURCHF        BUY Ôé╣  -4,828   154m MODIFY     Large loss ÔÇö cap SL at Ôé╣3000 max
+  1102178641   CADJPY        BUY Ôé╣   3,000   291m KEEP Ô£ô     Profitable trade
+  1102370871   CADJPY        BUY Ôé╣   1,494    95m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1102902409   ETHUSD        BUY Ôé╣   1,415     6m KEEP Ô£ô     Clean TP hit ÔÇö strategy working
+  1107625702   CHFJPY        BUY Ôé╣   1,499   383m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1107638691   USDCHF       SELL Ôé╣  -2,983    46m ANALYZE    Standard loss ÔÇö check HTF alignment
+  1107825244   USDJPY       SELL Ôé╣  -2,817   328m MODIFY     Long hold loss ÔÇö add time-based exit after 4h
+  1107825857   USDJPY       SELL Ôé╣  -2,370   328m MODIFY     Long hold loss ÔÇö add time-based exit after 4h
+  1107842879   CHFJPY        BUY Ôé╣  -3,211   175m MODIFY     Large loss ÔÇö cap SL at Ôé╣3000 max
+  1108084641   EURGBP       SELL Ôé╣   1,994   246m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1108097633   EURGBP       SELL Ôé╣     999   258m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1109518654   BTCUSD        BUY Ôé╣  -3,031    26m MODIFY     Large loss ÔÇö cap SL at Ôé╣3000 max
+  1109668204   EURCHF        BUY Ôé╣   2,491    67m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1109847843   EURGBP       SELL Ôé╣    -410    20m ANALYZE    Standard loss ÔÇö check HTF alignment
+  1109893129   GBPCHF        BUY Ôé╣   1,999    23m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1109972897   GBPCHF        BUY Ôé╣   2,999    34m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1113538369   NZDJPY        BUY Ôé╣   2,006    28m KEEP Ô£ô     Trailing SL locked profit ÔÇö working as intended
+  1114142016   NZDUSD        BUY Ôé╣   7,602   121m KEEP Ô£ô     Clean TP hit ÔÇö strategy working
+  1114144800   GBPNZD       SELL Ôé╣   5,172   170m KEEP Ô£ô     Clean TP hit ÔÇö strategy working
+
+======================================================================
+  ANALYSIS COMPLETE
+======================================================================

@@ -7065,3 +7065,1155 @@
 {"timestamp_ist": "2026-04-17 17:16:00 IST", "cycle": "17:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
 {"timestamp_ist": "2026-04-17 17:21:00 IST", "cycle": "17:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
 {"timestamp_ist": "2026-04-17 17:26:01 IST", "cycle": "17:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 01:16:00 IST", "cycle": "01:16", "phases": "INIT", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 01:21:01 IST", "cycle": "01:21", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 01:26:04 IST", "cycle": "01:26", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 01:31:02 IST", "cycle": "01:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 01:41:03 IST", "cycle": "01:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 01:46:02 IST", "cycle": "01:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 01:51:01 IST", "cycle": "01:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 01:56:01 IST", "cycle": "01:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:01:04 IST", "cycle": "02:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:06:02 IST", "cycle": "02:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:11:03 IST", "cycle": "02:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:16:03 IST", "cycle": "02:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:21:04 IST", "cycle": "02:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:26:00 IST", "cycle": "02:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:31:01 IST", "cycle": "02:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:36:02 IST", "cycle": "02:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:41:01 IST", "cycle": "02:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:46:03 IST", "cycle": "02:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:51:02 IST", "cycle": "02:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 02:56:04 IST", "cycle": "02:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 03:01:03 IST", "cycle": "03:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 03:06:04 IST", "cycle": "03:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 03:11:02 IST", "cycle": "03:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 03:16:04 IST", "cycle": "03:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 03:21:02 IST", "cycle": "03:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 03:26:00 IST", "cycle": "03:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 03:31:02 IST", "cycle": "03:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 03:36:01 IST", "cycle": "03:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 03:41:02 IST", "cycle": "03:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 03:46:00 IST", "cycle": "03:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 10:51:03 IST", "cycle": "10:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 10:56:03 IST", "cycle": "10:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:01:02 IST", "cycle": "11:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:06:01 IST", "cycle": "11:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:11:04 IST", "cycle": "11:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:16:00 IST", "cycle": "11:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:21:01 IST", "cycle": "11:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:26:03 IST", "cycle": "11:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:31:01 IST", "cycle": "11:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:36:24 IST", "cycle": "11:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:41:03 IST", "cycle": "11:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:46:01 IST", "cycle": "11:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:51:00 IST", "cycle": "11:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 11:56:05 IST", "cycle": "11:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:01:00 IST", "cycle": "12:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:06:01 IST", "cycle": "12:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:11:01 IST", "cycle": "12:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:16:02 IST", "cycle": "12:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:21:03 IST", "cycle": "12:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:26:01 IST", "cycle": "12:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:31:04 IST", "cycle": "12:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:36:01 IST", "cycle": "12:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:41:04 IST", "cycle": "12:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:46:03 IST", "cycle": "12:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:51:05 IST", "cycle": "12:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 12:56:04 IST", "cycle": "12:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:01:03 IST", "cycle": "13:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:06:04 IST", "cycle": "13:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:11:02 IST", "cycle": "13:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:16:00 IST", "cycle": "13:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:21:04 IST", "cycle": "13:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:26:02 IST", "cycle": "13:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:31:02 IST", "cycle": "13:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:36:59 IST", "cycle": "13:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:41:02 IST", "cycle": "13:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:46:03 IST", "cycle": "13:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:51:01 IST", "cycle": "13:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 13:56:00 IST", "cycle": "13:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:01:00 IST", "cycle": "14:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:06:04 IST", "cycle": "14:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:11:02 IST", "cycle": "14:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:16:03 IST", "cycle": "14:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:21:00 IST", "cycle": "14:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:26:05 IST", "cycle": "14:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:31:03 IST", "cycle": "14:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:36:03 IST", "cycle": "14:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:41:02 IST", "cycle": "14:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:46:03 IST", "cycle": "14:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:51:01 IST", "cycle": "14:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 14:56:04 IST", "cycle": "14:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:01:02 IST", "cycle": "15:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:06:03 IST", "cycle": "15:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:11:04 IST", "cycle": "15:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:16:02 IST", "cycle": "15:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:21:03 IST", "cycle": "15:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:26:03 IST", "cycle": "15:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:31:02 IST", "cycle": "15:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:36:04 IST", "cycle": "15:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:41:03 IST", "cycle": "15:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:46:02 IST", "cycle": "15:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:51:01 IST", "cycle": "15:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 15:56:00 IST", "cycle": "15:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:01:01 IST", "cycle": "16:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:06:02 IST", "cycle": "16:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:11:02 IST", "cycle": "16:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:16:02 IST", "cycle": "16:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:21:04 IST", "cycle": "16:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:26:03 IST", "cycle": "16:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:31:00 IST", "cycle": "16:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:36:00 IST", "cycle": "16:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:41:01 IST", "cycle": "16:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:46:04 IST", "cycle": "16:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:51:02 IST", "cycle": "16:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 16:56:04 IST", "cycle": "16:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:01:03 IST", "cycle": "17:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:06:04 IST", "cycle": "17:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:11:02 IST", "cycle": "17:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:16:00 IST", "cycle": "17:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:21:01 IST", "cycle": "17:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:26:01 IST", "cycle": "17:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:31:01 IST", "cycle": "17:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:36:37 IST", "cycle": "17:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:41:02 IST", "cycle": "17:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:46:02 IST", "cycle": "17:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:51:04 IST", "cycle": "17:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 17:56:01 IST", "cycle": "17:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:01:02 IST", "cycle": "18:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:06:04 IST", "cycle": "18:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:11:03 IST", "cycle": "18:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:16:00 IST", "cycle": "18:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:21:02 IST", "cycle": "18:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:26:00 IST", "cycle": "18:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:31:03 IST", "cycle": "18:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:36:03 IST", "cycle": "18:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:41:01 IST", "cycle": "18:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:46:05 IST", "cycle": "18:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:51:03 IST", "cycle": "18:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 18:56:00 IST", "cycle": "18:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 19:01:03 IST", "cycle": "19:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 19:06:01 IST", "cycle": "19:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 19:16:00 IST", "cycle": "19:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 19:26:04 IST", "cycle": "19:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 19:31:04 IST", "cycle": "19:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 19:36:01 IST", "cycle": "19:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 19:41:02 IST", "cycle": "19:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 19:46:03 IST", "cycle": "19:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 19:51:01 IST", "cycle": "19:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 19:56:02 IST", "cycle": "19:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:01:01 IST", "cycle": "20:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:06:04 IST", "cycle": "20:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:11:04 IST", "cycle": "20:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:16:00 IST", "cycle": "20:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:21:01 IST", "cycle": "20:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:26:00 IST", "cycle": "20:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:31:03 IST", "cycle": "20:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:36:03 IST", "cycle": "20:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:41:00 IST", "cycle": "20:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:46:02 IST", "cycle": "20:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:51:00 IST", "cycle": "20:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 20:56:00 IST", "cycle": "20:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:01:01 IST", "cycle": "21:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:06:03 IST", "cycle": "21:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:11:02 IST", "cycle": "21:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:16:03 IST", "cycle": "21:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:21:00 IST", "cycle": "21:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:26:01 IST", "cycle": "21:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:31:02 IST", "cycle": "21:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:36:04 IST", "cycle": "21:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:41:04 IST", "cycle": "21:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:46:04 IST", "cycle": "21:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:51:02 IST", "cycle": "21:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 21:56:01 IST", "cycle": "21:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:01:01 IST", "cycle": "22:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:06:01 IST", "cycle": "22:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:11:03 IST", "cycle": "22:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:16:00 IST", "cycle": "22:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:21:00 IST", "cycle": "22:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:26:04 IST", "cycle": "22:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:31:00 IST", "cycle": "22:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:36:05 IST", "cycle": "22:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:41:00 IST", "cycle": "22:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:46:03 IST", "cycle": "22:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:51:02 IST", "cycle": "22:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 22:56:03 IST", "cycle": "22:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:01:05 IST", "cycle": "23:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:06:04 IST", "cycle": "23:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:11:01 IST", "cycle": "23:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:16:02 IST", "cycle": "23:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:21:02 IST", "cycle": "23:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:26:03 IST", "cycle": "23:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:31:04 IST", "cycle": "23:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:36:00 IST", "cycle": "23:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:41:02 IST", "cycle": "23:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:46:02 IST", "cycle": "23:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:51:00 IST", "cycle": "23:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-20 23:56:05 IST", "cycle": "23:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 00:01:03 IST", "cycle": "00:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 00:06:03 IST", "cycle": "00:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 00:11:04 IST", "cycle": "00:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 00:26:04 IST", "cycle": "00:26", "phases": "INIT", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 00:32:00 IST", "cycle": "00:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 00:36:13 IST", "cycle": "00:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 00:41:02 IST", "cycle": "00:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 00:46:03 IST", "cycle": "00:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 00:51:02 IST", "cycle": "00:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 00:56:04 IST", "cycle": "00:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:01:00 IST", "cycle": "01:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:06:03 IST", "cycle": "01:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:11:03 IST", "cycle": "01:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:16:00 IST", "cycle": "01:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:21:01 IST", "cycle": "01:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:26:01 IST", "cycle": "01:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:31:03 IST", "cycle": "01:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:36:30 IST", "cycle": "01:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:41:04 IST", "cycle": "01:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:46:01 IST", "cycle": "01:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:51:02 IST", "cycle": "01:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 01:56:03 IST", "cycle": "01:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:01:02 IST", "cycle": "02:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:06:03 IST", "cycle": "02:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:11:03 IST", "cycle": "02:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:16:00 IST", "cycle": "02:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:21:05 IST", "cycle": "02:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:26:02 IST", "cycle": "02:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:31:03 IST", "cycle": "02:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:36:03 IST", "cycle": "02:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:41:02 IST", "cycle": "02:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:46:01 IST", "cycle": "02:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:51:04 IST", "cycle": "02:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 02:56:01 IST", "cycle": "02:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:01:04 IST", "cycle": "03:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:06:04 IST", "cycle": "03:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:11:01 IST", "cycle": "03:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:16:00 IST", "cycle": "03:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:21:01 IST", "cycle": "03:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:26:00 IST", "cycle": "03:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:31:03 IST", "cycle": "03:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:36:01 IST", "cycle": "03:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:41:04 IST", "cycle": "03:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:46:04 IST", "cycle": "03:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:51:01 IST", "cycle": "03:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 03:56:04 IST", "cycle": "03:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 04:01:02 IST", "cycle": "04:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:01:14 IST", "cycle": "13:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:06:04 IST", "cycle": "13:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:11:04 IST", "cycle": "13:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:16:04 IST", "cycle": "13:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:21:03 IST", "cycle": "13:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:26:03 IST", "cycle": "13:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:31:02 IST", "cycle": "13:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:36:01 IST", "cycle": "13:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:41:04 IST", "cycle": "13:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:46:04 IST", "cycle": "13:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:51:01 IST", "cycle": "13:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 13:56:03 IST", "cycle": "13:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:01:03 IST", "cycle": "14:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:06:02 IST", "cycle": "14:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:11:04 IST", "cycle": "14:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:16:02 IST", "cycle": "14:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:21:04 IST", "cycle": "14:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:26:00 IST", "cycle": "14:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:31:00 IST", "cycle": "14:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:36:04 IST", "cycle": "14:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:41:04 IST", "cycle": "14:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:46:04 IST", "cycle": "14:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:51:04 IST", "cycle": "14:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 14:56:00 IST", "cycle": "14:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:01:00 IST", "cycle": "15:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:06:00 IST", "cycle": "15:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:11:02 IST", "cycle": "15:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:16:03 IST", "cycle": "15:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:21:01 IST", "cycle": "15:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:26:01 IST", "cycle": "15:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:31:03 IST", "cycle": "15:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:36:03 IST", "cycle": "15:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:41:02 IST", "cycle": "15:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:46:01 IST", "cycle": "15:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:51:02 IST", "cycle": "15:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 15:56:03 IST", "cycle": "15:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:01:04 IST", "cycle": "16:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:06:01 IST", "cycle": "16:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:11:00 IST", "cycle": "16:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:16:00 IST", "cycle": "16:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:21:03 IST", "cycle": "16:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:26:04 IST", "cycle": "16:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:31:00 IST", "cycle": "16:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:36:03 IST", "cycle": "16:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:41:03 IST", "cycle": "16:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:46:00 IST", "cycle": "16:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:51:01 IST", "cycle": "16:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 16:56:00 IST", "cycle": "16:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:01:04 IST", "cycle": "17:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:06:00 IST", "cycle": "17:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:11:16 IST", "cycle": "17:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:16:00 IST", "cycle": "17:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:21:04 IST", "cycle": "17:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:26:03 IST", "cycle": "17:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:31:00 IST", "cycle": "17:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:41:03 IST", "cycle": "17:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:46:01 IST", "cycle": "17:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:51:02 IST", "cycle": "17:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 17:56:00 IST", "cycle": "17:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:01:01 IST", "cycle": "18:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:06:01 IST", "cycle": "18:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:11:01 IST", "cycle": "18:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:16:00 IST", "cycle": "18:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:21:00 IST", "cycle": "18:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:26:03 IST", "cycle": "18:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:31:00 IST", "cycle": "18:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:36:03 IST", "cycle": "18:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:41:00 IST", "cycle": "18:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 1}
+{"timestamp_ist": "2026-04-21 18:46:03 IST", "cycle": "18:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:51:03 IST", "cycle": "18:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 18:56:02 IST", "cycle": "18:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:01:03 IST", "cycle": "19:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 1}
+{"timestamp_ist": "2026-04-21 19:06:01 IST", "cycle": "19:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:11:03 IST", "cycle": "19:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:16:02 IST", "cycle": "19:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:21:03 IST", "cycle": "19:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:26:05 IST", "cycle": "19:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:31:01 IST", "cycle": "19:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:36:02 IST", "cycle": "19:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:41:01 IST", "cycle": "19:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:46:03 IST", "cycle": "19:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:51:03 IST", "cycle": "19:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 19:56:04 IST", "cycle": "19:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:01:04 IST", "cycle": "20:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:06:02 IST", "cycle": "20:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:11:01 IST", "cycle": "20:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:16:04 IST", "cycle": "20:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:21:01 IST", "cycle": "20:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:26:01 IST", "cycle": "20:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:31:02 IST", "cycle": "20:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 1}
+{"timestamp_ist": "2026-04-21 20:36:02 IST", "cycle": "20:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:41:01 IST", "cycle": "20:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:46:03 IST", "cycle": "20:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:51:00 IST", "cycle": "20:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 20:56:02 IST", "cycle": "20:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:01:03 IST", "cycle": "21:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:06:04 IST", "cycle": "21:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:11:02 IST", "cycle": "21:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:16:00 IST", "cycle": "21:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:21:00 IST", "cycle": "21:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:26:03 IST", "cycle": "21:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:31:02 IST", "cycle": "21:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:36:33 IST", "cycle": "21:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:41:01 IST", "cycle": "21:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:46:00 IST", "cycle": "21:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:51:03 IST", "cycle": "21:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 21:56:04 IST", "cycle": "21:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:01:04 IST", "cycle": "22:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:06:01 IST", "cycle": "22:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:11:04 IST", "cycle": "22:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:16:02 IST", "cycle": "22:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:21:00 IST", "cycle": "22:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:26:00 IST", "cycle": "22:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:31:03 IST", "cycle": "22:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:36:02 IST", "cycle": "22:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:41:01 IST", "cycle": "22:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:46:04 IST", "cycle": "22:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:51:00 IST", "cycle": "22:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 22:56:04 IST", "cycle": "22:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:01:00 IST", "cycle": "23:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:06:01 IST", "cycle": "23:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:11:03 IST", "cycle": "23:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:16:03 IST", "cycle": "23:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:21:03 IST", "cycle": "23:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:26:00 IST", "cycle": "23:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:31:04 IST", "cycle": "23:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:36:04 IST", "cycle": "23:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:41:03 IST", "cycle": "23:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:46:02 IST", "cycle": "23:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:51:04 IST", "cycle": "23:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-21 23:56:03 IST", "cycle": "23:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:01:02 IST", "cycle": "00:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:06:00 IST", "cycle": "00:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:11:00 IST", "cycle": "00:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:16:01 IST", "cycle": "00:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:21:04 IST", "cycle": "00:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:26:02 IST", "cycle": "00:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:31:02 IST", "cycle": "00:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:36:03 IST", "cycle": "00:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:41:02 IST", "cycle": "00:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:46:02 IST", "cycle": "00:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:51:00 IST", "cycle": "00:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 00:56:02 IST", "cycle": "00:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:01:04 IST", "cycle": "01:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:06:01 IST", "cycle": "01:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:11:03 IST", "cycle": "01:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:16:00 IST", "cycle": "01:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:21:00 IST", "cycle": "01:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:26:03 IST", "cycle": "01:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:31:02 IST", "cycle": "01:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:36:06 IST", "cycle": "01:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:41:02 IST", "cycle": "01:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:46:03 IST", "cycle": "01:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:51:00 IST", "cycle": "01:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 01:56:01 IST", "cycle": "01:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:01:02 IST", "cycle": "02:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:06:02 IST", "cycle": "02:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:11:03 IST", "cycle": "02:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:16:01 IST", "cycle": "02:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:21:02 IST", "cycle": "02:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:26:01 IST", "cycle": "02:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:31:00 IST", "cycle": "02:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:36:03 IST", "cycle": "02:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:41:03 IST", "cycle": "02:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:46:01 IST", "cycle": "02:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:51:03 IST", "cycle": "02:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 02:56:03 IST", "cycle": "02:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:01:00 IST", "cycle": "03:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:06:00 IST", "cycle": "03:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:11:05 IST", "cycle": "03:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:16:03 IST", "cycle": "03:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:21:01 IST", "cycle": "03:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:26:00 IST", "cycle": "03:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:31:01 IST", "cycle": "03:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:36:01 IST", "cycle": "03:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:41:03 IST", "cycle": "03:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:46:02 IST", "cycle": "03:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:51:05 IST", "cycle": "03:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 03:56:03 IST", "cycle": "03:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:01:02 IST", "cycle": "04:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:06:00 IST", "cycle": "04:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:11:01 IST", "cycle": "04:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:16:03 IST", "cycle": "04:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:21:01 IST", "cycle": "04:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:26:00 IST", "cycle": "04:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:31:03 IST", "cycle": "04:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:36:04 IST", "cycle": "04:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:41:00 IST", "cycle": "04:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:46:04 IST", "cycle": "04:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:51:01 IST", "cycle": "04:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 04:56:02 IST", "cycle": "04:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 05:01:04 IST", "cycle": "05:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:02:15 IST", "cycle": "14:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:06:03 IST", "cycle": "14:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:11:02 IST", "cycle": "14:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:16:03 IST", "cycle": "14:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:21:04 IST", "cycle": "14:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:26:01 IST", "cycle": "14:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:31:00 IST", "cycle": "14:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:37:10 IST", "cycle": "14:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:41:02 IST", "cycle": "14:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:46:02 IST", "cycle": "14:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:51:00 IST", "cycle": "14:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 14:56:05 IST", "cycle": "14:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:01:01 IST", "cycle": "15:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:06:02 IST", "cycle": "15:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:11:00 IST", "cycle": "15:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:16:03 IST", "cycle": "15:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:21:01 IST", "cycle": "15:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:26:02 IST", "cycle": "15:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:31:03 IST", "cycle": "15:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:36:07 IST", "cycle": "15:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:41:03 IST", "cycle": "15:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:46:03 IST", "cycle": "15:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:51:01 IST", "cycle": "15:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 15:56:02 IST", "cycle": "15:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:01:03 IST", "cycle": "16:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:06:03 IST", "cycle": "16:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:11:01 IST", "cycle": "16:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:16:04 IST", "cycle": "16:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:21:03 IST", "cycle": "16:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:26:04 IST", "cycle": "16:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:31:04 IST", "cycle": "16:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:36:02 IST", "cycle": "16:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:41:04 IST", "cycle": "16:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:46:03 IST", "cycle": "16:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:51:00 IST", "cycle": "16:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 16:56:01 IST", "cycle": "16:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:01:02 IST", "cycle": "17:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:06:05 IST", "cycle": "17:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:11:00 IST", "cycle": "17:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:16:04 IST", "cycle": "17:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:21:04 IST", "cycle": "17:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:26:00 IST", "cycle": "17:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:31:04 IST", "cycle": "17:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:41:00 IST", "cycle": "17:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:46:00 IST", "cycle": "17:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:51:00 IST", "cycle": "17:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 17:56:02 IST", "cycle": "17:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:01:03 IST", "cycle": "18:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:06:00 IST", "cycle": "18:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:11:03 IST", "cycle": "18:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:16:02 IST", "cycle": "18:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:21:00 IST", "cycle": "18:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:26:02 IST", "cycle": "18:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:31:01 IST", "cycle": "18:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:41:02 IST", "cycle": "18:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:46:05 IST", "cycle": "18:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:51:02 IST", "cycle": "18:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 18:56:01 IST", "cycle": "18:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:01:02 IST", "cycle": "19:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:06:00 IST", "cycle": "19:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:11:00 IST", "cycle": "19:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:16:04 IST", "cycle": "19:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:21:01 IST", "cycle": "19:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:26:04 IST", "cycle": "19:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:31:00 IST", "cycle": "19:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:36:00 IST", "cycle": "19:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:41:03 IST", "cycle": "19:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:46:00 IST", "cycle": "19:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:51:02 IST", "cycle": "19:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 19:56:03 IST", "cycle": "19:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:01:01 IST", "cycle": "20:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:06:03 IST", "cycle": "20:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:11:00 IST", "cycle": "20:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:16:05 IST", "cycle": "20:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:21:02 IST", "cycle": "20:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:26:01 IST", "cycle": "20:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:31:01 IST", "cycle": "20:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:36:02 IST", "cycle": "20:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:41:01 IST", "cycle": "20:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:46:03 IST", "cycle": "20:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:51:03 IST", "cycle": "20:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 20:56:00 IST", "cycle": "20:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:01:03 IST", "cycle": "21:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:06:02 IST", "cycle": "21:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:11:05 IST", "cycle": "21:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:16:05 IST", "cycle": "21:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:21:04 IST", "cycle": "21:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:26:02 IST", "cycle": "21:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:31:04 IST", "cycle": "21:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:41:00 IST", "cycle": "21:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:46:01 IST", "cycle": "21:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:51:03 IST", "cycle": "21:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 21:56:01 IST", "cycle": "21:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:01:03 IST", "cycle": "22:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:06:04 IST", "cycle": "22:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:11:00 IST", "cycle": "22:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:16:05 IST", "cycle": "22:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:21:04 IST", "cycle": "22:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:26:00 IST", "cycle": "22:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:31:04 IST", "cycle": "22:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:36:00 IST", "cycle": "22:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:41:03 IST", "cycle": "22:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:46:03 IST", "cycle": "22:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:51:03 IST", "cycle": "22:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 22:56:00 IST", "cycle": "22:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:01:04 IST", "cycle": "23:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:06:01 IST", "cycle": "23:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:11:01 IST", "cycle": "23:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:16:02 IST", "cycle": "23:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:21:01 IST", "cycle": "23:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:26:01 IST", "cycle": "23:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:31:04 IST", "cycle": "23:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:36:57 IST", "cycle": "23:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:41:05 IST", "cycle": "23:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:46:02 IST", "cycle": "23:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:51:04 IST", "cycle": "23:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-22 23:56:04 IST", "cycle": "23:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:01:05 IST", "cycle": "00:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:06:02 IST", "cycle": "00:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:11:00 IST", "cycle": "00:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:16:02 IST", "cycle": "00:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:21:04 IST", "cycle": "00:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:26:03 IST", "cycle": "00:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:31:02 IST", "cycle": "00:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:36:01 IST", "cycle": "00:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:41:01 IST", "cycle": "00:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:46:00 IST", "cycle": "00:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:51:03 IST", "cycle": "00:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 00:56:02 IST", "cycle": "00:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:01:00 IST", "cycle": "01:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:06:00 IST", "cycle": "01:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:11:00 IST", "cycle": "01:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:16:02 IST", "cycle": "01:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:21:00 IST", "cycle": "01:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:26:04 IST", "cycle": "01:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:31:02 IST", "cycle": "01:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:37:28 IST", "cycle": "01:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:41:04 IST", "cycle": "01:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:46:04 IST", "cycle": "01:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:51:03 IST", "cycle": "01:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 01:56:01 IST", "cycle": "01:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:01:03 IST", "cycle": "02:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:06:02 IST", "cycle": "02:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:11:02 IST", "cycle": "02:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:16:04 IST", "cycle": "02:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:21:04 IST", "cycle": "02:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:26:04 IST", "cycle": "02:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:31:02 IST", "cycle": "02:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:36:04 IST", "cycle": "02:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:41:04 IST", "cycle": "02:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:46:02 IST", "cycle": "02:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:51:00 IST", "cycle": "02:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 02:56:03 IST", "cycle": "02:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:01:00 IST", "cycle": "03:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:06:04 IST", "cycle": "03:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:11:04 IST", "cycle": "03:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:16:03 IST", "cycle": "03:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:21:05 IST", "cycle": "03:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:26:01 IST", "cycle": "03:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:31:01 IST", "cycle": "03:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:36:01 IST", "cycle": "03:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:41:02 IST", "cycle": "03:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:46:01 IST", "cycle": "03:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:51:00 IST", "cycle": "03:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 03:56:03 IST", "cycle": "03:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 04:01:01 IST", "cycle": "04:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 04:06:03 IST", "cycle": "04:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 04:11:00 IST", "cycle": "04:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 04:16:04 IST", "cycle": "04:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 13:46:05 IST", "cycle": "13:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 13:51:00 IST", "cycle": "13:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 13:56:02 IST", "cycle": "13:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 14:01:02 IST", "cycle": "14:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 14:06:03 IST", "cycle": "14:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 14:11:01 IST", "cycle": "14:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 14:16:02 IST", "cycle": "14:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 14:21:01 IST", "cycle": "14:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 14:26:04 IST", "cycle": "14:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 14:31:01 IST", "cycle": "14:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 14:36:05 IST", "cycle": "14:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 14:41:00 IST", "cycle": "14:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 22:41:02 IST", "cycle": "22:41", "phases": "INIT", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 22:51:04 IST", "cycle": "22:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 22:56:00 IST", "cycle": "22:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:01:03 IST", "cycle": "23:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:06:01 IST", "cycle": "23:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:11:02 IST", "cycle": "23:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:16:02 IST", "cycle": "23:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:21:03 IST", "cycle": "23:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:26:02 IST", "cycle": "23:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:31:02 IST", "cycle": "23:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:36:33 IST", "cycle": "23:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:41:03 IST", "cycle": "23:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:46:03 IST", "cycle": "23:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:51:03 IST", "cycle": "23:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-23 23:56:01 IST", "cycle": "23:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:01:03 IST", "cycle": "00:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:06:01 IST", "cycle": "00:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:11:01 IST", "cycle": "00:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:16:02 IST", "cycle": "00:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:21:00 IST", "cycle": "00:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:26:02 IST", "cycle": "00:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:31:04 IST", "cycle": "00:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:36:19 IST", "cycle": "00:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:41:03 IST", "cycle": "00:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:46:03 IST", "cycle": "00:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:51:04 IST", "cycle": "00:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 00:56:00 IST", "cycle": "00:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:01:02 IST", "cycle": "01:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:06:01 IST", "cycle": "01:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:11:00 IST", "cycle": "01:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:16:01 IST", "cycle": "01:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:21:02 IST", "cycle": "01:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:26:01 IST", "cycle": "01:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:31:05 IST", "cycle": "01:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:36:03 IST", "cycle": "01:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:41:01 IST", "cycle": "01:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:46:03 IST", "cycle": "01:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:51:00 IST", "cycle": "01:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 01:56:03 IST", "cycle": "01:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 02:01:04 IST", "cycle": "02:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 02:06:00 IST", "cycle": "02:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 02:11:04 IST", "cycle": "02:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 13:16:16 IST", "cycle": "13:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 13:21:00 IST", "cycle": "13:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 13:26:04 IST", "cycle": "13:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 13:31:02 IST", "cycle": "13:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 13:36:22 IST", "cycle": "13:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 13:41:01 IST", "cycle": "13:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 13:46:02 IST", "cycle": "13:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 13:51:03 IST", "cycle": "13:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 13:56:00 IST", "cycle": "13:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:01:04 IST", "cycle": "14:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:06:03 IST", "cycle": "14:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:11:00 IST", "cycle": "14:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:16:01 IST", "cycle": "14:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:21:00 IST", "cycle": "14:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:26:02 IST", "cycle": "14:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:31:01 IST", "cycle": "14:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:36:00 IST", "cycle": "14:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:41:00 IST", "cycle": "14:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:46:02 IST", "cycle": "14:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:51:02 IST", "cycle": "14:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 14:56:03 IST", "cycle": "14:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:01:01 IST", "cycle": "15:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:06:02 IST", "cycle": "15:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:11:02 IST", "cycle": "15:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:16:01 IST", "cycle": "15:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:21:03 IST", "cycle": "15:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:26:02 IST", "cycle": "15:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:31:00 IST", "cycle": "15:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:36:03 IST", "cycle": "15:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:41:04 IST", "cycle": "15:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:46:01 IST", "cycle": "15:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:51:04 IST", "cycle": "15:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 15:56:00 IST", "cycle": "15:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 16:01:04 IST", "cycle": "16:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 16:06:03 IST", "cycle": "16:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 16:11:00 IST", "cycle": "16:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 16:16:01 IST", "cycle": "16:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 16:21:02 IST", "cycle": "16:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 1}
+{"timestamp_ist": "2026-04-24 16:26:01 IST", "cycle": "16:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 16:31:04 IST", "cycle": "16:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 16:36:01 IST", "cycle": "16:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 16:41:02 IST", "cycle": "16:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 16:46:02 IST", "cycle": "16:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 16:51:02 IST", "cycle": "16:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 1}
+{"timestamp_ist": "2026-04-24 16:56:03 IST", "cycle": "16:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:01:01 IST", "cycle": "17:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:06:01 IST", "cycle": "17:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:11:01 IST", "cycle": "17:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:16:03 IST", "cycle": "17:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:21:04 IST", "cycle": "17:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:26:02 IST", "cycle": "17:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:31:00 IST", "cycle": "17:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:36:57 IST", "cycle": "17:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:41:26 IST", "cycle": "17:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:46:02 IST", "cycle": "17:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:51:03 IST", "cycle": "17:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 17:56:01 IST", "cycle": "17:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:01:02 IST", "cycle": "18:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:06:04 IST", "cycle": "18:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:11:04 IST", "cycle": "18:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:16:00 IST", "cycle": "18:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:21:00 IST", "cycle": "18:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:26:00 IST", "cycle": "18:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:31:02 IST", "cycle": "18:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:36:01 IST", "cycle": "18:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:41:01 IST", "cycle": "18:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:46:03 IST", "cycle": "18:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:51:03 IST", "cycle": "18:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 18:56:04 IST", "cycle": "18:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:01:02 IST", "cycle": "19:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:06:01 IST", "cycle": "19:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:11:01 IST", "cycle": "19:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:16:03 IST", "cycle": "19:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:21:04 IST", "cycle": "19:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:26:25 IST", "cycle": "19:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:31:00 IST", "cycle": "19:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:36:04 IST", "cycle": "19:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:41:00 IST", "cycle": "19:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:46:04 IST", "cycle": "19:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:51:01 IST", "cycle": "19:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 19:56:02 IST", "cycle": "19:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:01:04 IST", "cycle": "20:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:06:04 IST", "cycle": "20:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:11:01 IST", "cycle": "20:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:16:04 IST", "cycle": "20:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:21:04 IST", "cycle": "20:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:26:03 IST", "cycle": "20:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 1}
+{"timestamp_ist": "2026-04-24 20:31:04 IST", "cycle": "20:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:36:00 IST", "cycle": "20:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:41:03 IST", "cycle": "20:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:46:01 IST", "cycle": "20:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:51:01 IST", "cycle": "20:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 20:56:00 IST", "cycle": "20:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:01:02 IST", "cycle": "21:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:06:00 IST", "cycle": "21:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:11:00 IST", "cycle": "21:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:16:02 IST", "cycle": "21:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:21:03 IST", "cycle": "21:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:26:00 IST", "cycle": "21:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:31:03 IST", "cycle": "21:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:36:00 IST", "cycle": "21:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:41:00 IST", "cycle": "21:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:46:03 IST", "cycle": "21:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:51:02 IST", "cycle": "21:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 21:56:01 IST", "cycle": "21:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:01:04 IST", "cycle": "22:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:06:01 IST", "cycle": "22:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:11:02 IST", "cycle": "22:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:16:00 IST", "cycle": "22:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:21:04 IST", "cycle": "22:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:26:03 IST", "cycle": "22:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:31:01 IST", "cycle": "22:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:36:02 IST", "cycle": "22:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:41:02 IST", "cycle": "22:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:46:02 IST", "cycle": "22:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:51:04 IST", "cycle": "22:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 22:56:03 IST", "cycle": "22:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:01:01 IST", "cycle": "23:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:06:00 IST", "cycle": "23:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:11:01 IST", "cycle": "23:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:16:02 IST", "cycle": "23:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:21:03 IST", "cycle": "23:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:26:01 IST", "cycle": "23:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:31:04 IST", "cycle": "23:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:36:00 IST", "cycle": "23:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:41:01 IST", "cycle": "23:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:46:01 IST", "cycle": "23:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:51:05 IST", "cycle": "23:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-24 23:56:00 IST", "cycle": "23:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:01:04 IST", "cycle": "00:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:06:05 IST", "cycle": "00:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:11:02 IST", "cycle": "00:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:16:03 IST", "cycle": "00:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:21:02 IST", "cycle": "00:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:26:00 IST", "cycle": "00:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:31:04 IST", "cycle": "00:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:36:05 IST", "cycle": "00:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:41:03 IST", "cycle": "00:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:46:01 IST", "cycle": "00:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:51:03 IST", "cycle": "00:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 00:56:02 IST", "cycle": "00:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:01:03 IST", "cycle": "01:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:06:03 IST", "cycle": "01:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:11:02 IST", "cycle": "01:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:16:04 IST", "cycle": "01:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:21:01 IST", "cycle": "01:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:26:00 IST", "cycle": "01:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:31:04 IST", "cycle": "01:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:36:00 IST", "cycle": "01:36", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:41:00 IST", "cycle": "01:41", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:46:02 IST", "cycle": "01:46", "phases": "15M, 5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:51:02 IST", "cycle": "01:51", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 01:56:01 IST", "cycle": "01:56", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 02:01:01 IST", "cycle": "02:01", "phases": "15M, 5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 02:06:00 IST", "cycle": "02:06", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 02:11:03 IST", "cycle": "02:11", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 02:16:00 IST", "cycle": "02:16", "phases": "15M, 5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 02:21:00 IST", "cycle": "02:21", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 02:26:03 IST", "cycle": "02:26", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 02:31:04 IST", "cycle": "02:31", "phases": "1H, 15M, 5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 02:36:02 IST", "cycle": "02:36", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-25 02:41:00 IST", "cycle": "02:41", "phases": "5M", "pairs_scanned": 21, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 03:06:02 IST", "cycle": "03:06", "phases": "INIT", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 12:16:02 IST", "cycle": "12:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 12:21:03 IST", "cycle": "12:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 12:26:04 IST", "cycle": "12:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 12:31:04 IST", "cycle": "12:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 12:41:03 IST", "cycle": "12:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 12:46:00 IST", "cycle": "12:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 12:51:00 IST", "cycle": "12:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 12:56:04 IST", "cycle": "12:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:01:03 IST", "cycle": "13:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:06:04 IST", "cycle": "13:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:11:03 IST", "cycle": "13:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:16:01 IST", "cycle": "13:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:21:04 IST", "cycle": "13:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:26:00 IST", "cycle": "13:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:31:05 IST", "cycle": "13:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:37:07 IST", "cycle": "13:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:41:00 IST", "cycle": "13:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:46:04 IST", "cycle": "13:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:51:00 IST", "cycle": "13:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 13:56:03 IST", "cycle": "13:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:01:04 IST", "cycle": "14:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:06:00 IST", "cycle": "14:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:11:02 IST", "cycle": "14:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:16:02 IST", "cycle": "14:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:21:02 IST", "cycle": "14:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:26:00 IST", "cycle": "14:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:31:02 IST", "cycle": "14:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:36:01 IST", "cycle": "14:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:41:02 IST", "cycle": "14:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:46:04 IST", "cycle": "14:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:51:00 IST", "cycle": "14:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 14:56:04 IST", "cycle": "14:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:01:02 IST", "cycle": "15:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:06:00 IST", "cycle": "15:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:11:02 IST", "cycle": "15:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:16:02 IST", "cycle": "15:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:21:04 IST", "cycle": "15:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:26:03 IST", "cycle": "15:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:31:04 IST", "cycle": "15:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:36:01 IST", "cycle": "15:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:41:00 IST", "cycle": "15:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:46:01 IST", "cycle": "15:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:51:01 IST", "cycle": "15:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 15:56:00 IST", "cycle": "15:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:01:04 IST", "cycle": "16:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:06:04 IST", "cycle": "16:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:11:04 IST", "cycle": "16:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:16:02 IST", "cycle": "16:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:21:02 IST", "cycle": "16:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:26:05 IST", "cycle": "16:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:31:03 IST", "cycle": "16:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:36:02 IST", "cycle": "16:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:41:02 IST", "cycle": "16:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:46:03 IST", "cycle": "16:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:51:00 IST", "cycle": "16:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 16:56:03 IST", "cycle": "16:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 17:01:01 IST", "cycle": "17:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 17:06:00 IST", "cycle": "17:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 17:11:01 IST", "cycle": "17:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 17:16:00 IST", "cycle": "17:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 17:21:02 IST", "cycle": "17:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 17:26:02 IST", "cycle": "17:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-27 17:31:02 IST", "cycle": "17:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 17:22:00 IST", "cycle": "17:21", "phases": "INIT", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 17:31:00 IST", "cycle": "17:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 17:36:00 IST", "cycle": "17:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 17:41:00 IST", "cycle": "17:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 17:46:00 IST", "cycle": "17:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 17:51:05 IST", "cycle": "17:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 17:56:02 IST", "cycle": "17:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:01:01 IST", "cycle": "18:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:06:04 IST", "cycle": "18:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:11:03 IST", "cycle": "18:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:16:02 IST", "cycle": "18:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:21:04 IST", "cycle": "18:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:26:03 IST", "cycle": "18:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:31:02 IST", "cycle": "18:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:36:01 IST", "cycle": "18:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:41:00 IST", "cycle": "18:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:46:04 IST", "cycle": "18:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:51:00 IST", "cycle": "18:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 18:56:04 IST", "cycle": "18:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:01:02 IST", "cycle": "19:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:06:00 IST", "cycle": "19:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:11:04 IST", "cycle": "19:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:16:04 IST", "cycle": "19:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:21:03 IST", "cycle": "19:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:26:01 IST", "cycle": "19:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:31:00 IST", "cycle": "19:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:36:02 IST", "cycle": "19:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:41:01 IST", "cycle": "19:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:46:03 IST", "cycle": "19:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:51:00 IST", "cycle": "19:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 19:56:02 IST", "cycle": "19:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:01:01 IST", "cycle": "20:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:06:04 IST", "cycle": "20:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:11:00 IST", "cycle": "20:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:16:05 IST", "cycle": "20:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:21:03 IST", "cycle": "20:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:26:04 IST", "cycle": "20:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:31:02 IST", "cycle": "20:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:36:01 IST", "cycle": "20:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:41:00 IST", "cycle": "20:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:46:04 IST", "cycle": "20:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:51:01 IST", "cycle": "20:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 20:56:02 IST", "cycle": "20:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:01:03 IST", "cycle": "21:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:06:00 IST", "cycle": "21:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:11:00 IST", "cycle": "21:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:16:04 IST", "cycle": "21:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:21:02 IST", "cycle": "21:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:26:00 IST", "cycle": "21:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:31:04 IST", "cycle": "21:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:36:00 IST", "cycle": "21:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:41:01 IST", "cycle": "21:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:46:02 IST", "cycle": "21:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:51:04 IST", "cycle": "21:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 21:56:02 IST", "cycle": "21:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:01:03 IST", "cycle": "22:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:06:00 IST", "cycle": "22:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:11:03 IST", "cycle": "22:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:16:02 IST", "cycle": "22:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:21:03 IST", "cycle": "22:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:26:00 IST", "cycle": "22:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:31:02 IST", "cycle": "22:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:36:03 IST", "cycle": "22:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:41:00 IST", "cycle": "22:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:46:01 IST", "cycle": "22:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:51:05 IST", "cycle": "22:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 22:56:03 IST", "cycle": "22:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:01:02 IST", "cycle": "23:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:06:03 IST", "cycle": "23:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:11:04 IST", "cycle": "23:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:16:00 IST", "cycle": "23:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:21:01 IST", "cycle": "23:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:26:01 IST", "cycle": "23:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:31:03 IST", "cycle": "23:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:36:03 IST", "cycle": "23:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:41:03 IST", "cycle": "23:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:46:01 IST", "cycle": "23:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:51:00 IST", "cycle": "23:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-29 23:56:00 IST", "cycle": "23:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:01:01 IST", "cycle": "00:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:06:02 IST", "cycle": "00:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:11:04 IST", "cycle": "00:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:16:03 IST", "cycle": "00:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:21:04 IST", "cycle": "00:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:26:02 IST", "cycle": "00:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:31:04 IST", "cycle": "00:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:36:03 IST", "cycle": "00:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:41:02 IST", "cycle": "00:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:46:00 IST", "cycle": "00:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:51:02 IST", "cycle": "00:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 00:56:01 IST", "cycle": "00:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:01:02 IST", "cycle": "01:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:06:01 IST", "cycle": "01:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:11:00 IST", "cycle": "01:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:16:04 IST", "cycle": "01:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:21:02 IST", "cycle": "01:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:26:04 IST", "cycle": "01:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:31:03 IST", "cycle": "01:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:36:23 IST", "cycle": "01:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:41:03 IST", "cycle": "01:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:46:03 IST", "cycle": "01:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:51:00 IST", "cycle": "01:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 01:56:02 IST", "cycle": "01:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:01:02 IST", "cycle": "02:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:06:04 IST", "cycle": "02:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:11:04 IST", "cycle": "02:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:16:02 IST", "cycle": "02:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:26:02 IST", "cycle": "02:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:31:00 IST", "cycle": "02:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:36:04 IST", "cycle": "02:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:41:02 IST", "cycle": "02:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:46:01 IST", "cycle": "02:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:51:01 IST", "cycle": "02:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 02:56:02 IST", "cycle": "02:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 03:01:01 IST", "cycle": "03:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 03:06:04 IST", "cycle": "03:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 03:11:01 IST", "cycle": "03:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 03:16:03 IST", "cycle": "03:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 03:21:04 IST", "cycle": "03:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 03:26:04 IST", "cycle": "03:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 03:31:04 IST", "cycle": "03:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 03:36:02 IST", "cycle": "03:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 03:41:01 IST", "cycle": "03:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 11:06:02 IST", "cycle": "11:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 11:11:03 IST", "cycle": "11:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 11:16:01 IST", "cycle": "11:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 11:21:01 IST", "cycle": "11:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 11:26:02 IST", "cycle": "11:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 11:31:02 IST", "cycle": "11:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 11:36:01 IST", "cycle": "11:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 11:41:02 IST", "cycle": "11:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 11:51:51 IST", "cycle": "11:51", "phases": "INIT", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 11:56:47 IST", "cycle": "11:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:01:00 IST", "cycle": "12:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:06:04 IST", "cycle": "12:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:11:00 IST", "cycle": "12:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:16:00 IST", "cycle": "12:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:21:01 IST", "cycle": "12:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:26:00 IST", "cycle": "12:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:31:03 IST", "cycle": "12:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:36:00 IST", "cycle": "12:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:41:04 IST", "cycle": "12:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:46:00 IST", "cycle": "12:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:51:02 IST", "cycle": "12:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 12:56:01 IST", "cycle": "12:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 13:01:03 IST", "cycle": "13:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 13:06:04 IST", "cycle": "13:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 13:11:37 IST", "cycle": "13:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 13:21:01 IST", "cycle": "13:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 13:26:50 IST", "cycle": "13:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 13:31:44 IST", "cycle": "13:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 13:41:01 IST", "cycle": "13:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 13:51:01 IST", "cycle": "13:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 13:56:03 IST", "cycle": "13:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:01:03 IST", "cycle": "14:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:06:03 IST", "cycle": "14:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:11:03 IST", "cycle": "14:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:16:03 IST", "cycle": "14:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:21:02 IST", "cycle": "14:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:26:03 IST", "cycle": "14:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:31:00 IST", "cycle": "14:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:36:00 IST", "cycle": "14:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:41:03 IST", "cycle": "14:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:46:01 IST", "cycle": "14:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 14:51:04 IST", "cycle": "14:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 1}
+{"timestamp_ist": "2026-04-30 14:56:00 IST", "cycle": "14:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:01:02 IST", "cycle": "15:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 1}
+{"timestamp_ist": "2026-04-30 15:06:05 IST", "cycle": "15:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:11:01 IST", "cycle": "15:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:16:00 IST", "cycle": "15:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:21:02 IST", "cycle": "15:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:26:04 IST", "cycle": "15:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:31:02 IST", "cycle": "15:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:36:00 IST", "cycle": "15:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:41:01 IST", "cycle": "15:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:46:03 IST", "cycle": "15:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:51:02 IST", "cycle": "15:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 15:56:02 IST", "cycle": "15:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:01:00 IST", "cycle": "16:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:06:00 IST", "cycle": "16:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:11:03 IST", "cycle": "16:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:16:01 IST", "cycle": "16:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:21:00 IST", "cycle": "16:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:26:03 IST", "cycle": "16:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:31:03 IST", "cycle": "16:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:36:04 IST", "cycle": "16:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:41:02 IST", "cycle": "16:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:46:05 IST", "cycle": "16:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:51:03 IST", "cycle": "16:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 16:56:01 IST", "cycle": "16:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:01:01 IST", "cycle": "17:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:06:03 IST", "cycle": "17:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:11:00 IST", "cycle": "17:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:16:03 IST", "cycle": "17:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:21:04 IST", "cycle": "17:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:26:04 IST", "cycle": "17:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:31:01 IST", "cycle": "17:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:36:01 IST", "cycle": "17:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:41:04 IST", "cycle": "17:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:46:05 IST", "cycle": "17:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:51:01 IST", "cycle": "17:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 17:56:02 IST", "cycle": "17:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 18:01:00 IST", "cycle": "18:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:06:02 IST", "cycle": "22:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:11:02 IST", "cycle": "22:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:16:05 IST", "cycle": "22:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:21:06 IST", "cycle": "22:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:26:04 IST", "cycle": "22:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:31:02 IST", "cycle": "22:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:36:00 IST", "cycle": "22:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:41:01 IST", "cycle": "22:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:46:00 IST", "cycle": "22:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:51:01 IST", "cycle": "22:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 22:56:03 IST", "cycle": "22:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:01:01 IST", "cycle": "23:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:06:00 IST", "cycle": "23:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:11:00 IST", "cycle": "23:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:16:03 IST", "cycle": "23:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:21:02 IST", "cycle": "23:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:26:04 IST", "cycle": "23:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:31:04 IST", "cycle": "23:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:36:03 IST", "cycle": "23:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:41:00 IST", "cycle": "23:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:46:04 IST", "cycle": "23:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:51:03 IST", "cycle": "23:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-04-30 23:56:01 IST", "cycle": "23:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:01:00 IST", "cycle": "00:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:06:03 IST", "cycle": "00:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:11:04 IST", "cycle": "00:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:16:02 IST", "cycle": "00:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:21:04 IST", "cycle": "00:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:26:03 IST", "cycle": "00:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:31:04 IST", "cycle": "00:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:36:03 IST", "cycle": "00:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:41:04 IST", "cycle": "00:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:46:02 IST", "cycle": "00:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:51:02 IST", "cycle": "00:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 00:56:04 IST", "cycle": "00:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:01:01 IST", "cycle": "01:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:06:02 IST", "cycle": "01:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:11:02 IST", "cycle": "01:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:16:01 IST", "cycle": "01:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:21:05 IST", "cycle": "01:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:26:04 IST", "cycle": "01:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:31:04 IST", "cycle": "01:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:36:04 IST", "cycle": "01:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:41:01 IST", "cycle": "01:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:46:00 IST", "cycle": "01:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:51:03 IST", "cycle": "01:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 01:56:04 IST", "cycle": "01:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:01:04 IST", "cycle": "02:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:06:01 IST", "cycle": "02:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:11:03 IST", "cycle": "02:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:16:04 IST", "cycle": "02:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:21:00 IST", "cycle": "02:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:26:02 IST", "cycle": "02:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:31:01 IST", "cycle": "02:31", "phases": "1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:36:01 IST", "cycle": "02:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:41:03 IST", "cycle": "02:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:46:03 IST", "cycle": "02:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:51:01 IST", "cycle": "02:51", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 02:56:03 IST", "cycle": "02:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 03:01:01 IST", "cycle": "03:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 03:06:02 IST", "cycle": "03:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 13:17:03 IST", "cycle": "13:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 13:21:01 IST", "cycle": "13:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 13:26:03 IST", "cycle": "13:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 13:31:04 IST", "cycle": "13:31", "phases": "4H, 1H, 15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 13:36:01 IST", "cycle": "13:36", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 13:41:02 IST", "cycle": "13:41", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 13:46:03 IST", "cycle": "13:46", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 13:56:02 IST", "cycle": "13:56", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 14:01:03 IST", "cycle": "14:01", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 14:06:03 IST", "cycle": "14:06", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 14:11:00 IST", "cycle": "14:11", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 14:16:03 IST", "cycle": "14:16", "phases": "15M, 5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 14:21:04 IST", "cycle": "14:21", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}
+{"timestamp_ist": "2026-05-01 14:26:02 IST", "cycle": "14:26", "phases": "5M", "pairs_scanned": 50, "trades_executed": 0}

@@ -206,6 +206,7 @@ class MSSOrderBlockStrategy:
         self,
         df_1h: pd.DataFrame,
         bias: DailyBias,
+        precomputed_mss_list: Optional[List['MSS']] = None
     ) -> Optional[MSSConfirmation]:
         """
         Look for a Market Structure Shift on 1H that aligns with the bias.
@@ -218,7 +219,10 @@ class MSSOrderBlockStrategy:
         if df_1h is None or len(df_1h) < 20:
             return None
 
-        mss_list = detect_mss(df_1h, lookback=5, require_body_close=True)
+        if precomputed_mss_list is not None:
+            mss_list = precomputed_mss_list
+        else:
+            mss_list = detect_mss(df_1h, lookback=5, require_body_close=True)
 
         target_dir = Direction.BULLISH if bias.direction == BiasType.BULLISH else Direction.BEARISH
 

@@ -221,55 +221,73 @@ def detect_liquidity_levels(
 ) -> List[LiquidityLevel]:
     """
     Detect swing highs and lows (liquidity levels)
-    
-    A swing high is a candle with the highest high in a window of surrounding candles.
-    A swing low is a candle with the lowest low in a window of surrounding candles.
-    
-    Args:
-        df: OHLCV DataFrame
-        lookback: Number of candles to look back
-        lookforward: Number of candles to look forward
-        
-    Returns:
-        List of LiquidityLevel objects
+    Optimized via vectorized operations.
     """
     levels = []
     
-    for i in range(lookback, len(df) - lookforward):
-        current = df.iloc[i]
-        
-        # Get surrounding candles
-        before = df.iloc[i - lookback:i]
-        after = df.iloc[i + 1:i + lookforward + 1]
-        
-        # Check for swing high
-        is_swing_high = (
-            current['high'] >= before['high'].max() and
-            current['high'] >= after['high'].max()
-        )
-        
-        # Check for swing low
-        is_swing_low = (
-            current['low'] <= before['low'].min() and
-            current['low'] <= after['low'].min()
-        )
-        
-        if is_swing_high:
-            levels.append(LiquidityLevel(
-                index=i,
-                datetime=df.index[i],
-                price=current['high'],
-                level_type="high"
-            ))
-        
-        if is_swing_low:
-            levels.append(LiquidityLevel(
-                index=i,
-                datetime=df.index[i],
-                price=current['low'],
-                level_type="low"
-            ))
+    highs = df['high']
+    lows = df['low']
     
+    # Vectorized calculation for 'before' window
+    before_high_max = highs.rolling(window=lookback, min_periods=lookback).max().shift(1)
+    before_low_min = lows.rolling(window=lookback, min_periods=lookback).min().shift(1)
+    
+    # Vectorized calculation for 'after' window (using reversed series)
+    after_high_max = highs.iloc[::-1].rolling(window=lookforward, min_periods=lookforward).max().shift(1).iloc[::-1]
+    after_low_min = lows.iloc[::-1].rolling(window=lookforward, min_periods=lookforward).min().shift(1).iloc[::-1]
+    
+    # Identify swing highs and lows
+    is_swing_high = (highs >= before_high_max) & (highs >= after_high_max)
+    is_swing_low = (lows <= before_low_min) & (lows <= after_low_min)
+    
+    # Get indices where swings occur
+    # We must also ensure we skip the first `lookback` and last `lookforward` elements
+    valid_range = pd.Series(False, index=df.index)
+    valid_range.iloc[lookback:len(df)-lookforward] = True
+    
+    swing_high_dates = df[is_swing_high & valid_range]
+    swing_low_dates = df[is_swing_low & valid_range]
+    
+    # In order to maintain chronological order without much overhead, 
+    # we can construct both lists, merge them or keep them as they are and sort by index.
+    
+    # To mimic original behavior which appends in chronological order:
+    for idx_pos, (dt, row) in enumerate(swing_high_dates.iterrows()):
+        # We need the integer index (i). 
+        # Since iterrows doesn't give integer location efficiently, we can use np.where
+        pass
+        
+    # An efficient way to maintain order is to combine all swings and then sort
+    sh_df = pd.DataFrame({
+        'index': np.where(is_swing_high & valid_range)[0],
+        'datetime': swing_high_dates.index,
+        'price': swing_high_dates['high'],
+        'level_type': 'high'
+    })
+    
+    sl_df = pd.DataFrame({
+        'index': np.where(is_swing_low & valid_range)[0],
+        'datetime': swing_low_dates.index,
+        'price': swing_low_dates['low'],
+        'level_type': 'low'
+    })
+    
+    combined = pd.concat([sh_df, sl_df]).sort_values('index')
+    
+    # Vectorized unpacking instead of iterrows
+    idx_vals = combined['index'].values
+    dt_vals = combined['datetime'].tolist() # Preserve timezone info
+    pr_vals = combined['price'].values
+    lt_vals = combined['level_type'].values
+    
+    for i in range(len(combined)):
+        levels.append(LiquidityLevel(
+            index=int(idx_vals[i]),
+            datetime=dt_vals[i],
+            price=float(pr_vals[i]),
+            level_type=str(lt_vals[i])
+        ))
+        
     return levels
 
 
@@ -280,42 +298,32 @@ def detect_liquidity_sweep(
 ) -> Optional[Tuple[int, bool]]:
     """
     Detect if a liquidity level has been swept
-    
-    A sweep occurs when price trades through the level but closes back
-    in the opposite direction (indicating rejection).
-    
-    Args:
-        df: OHLCV DataFrame
-        level: LiquidityLevel to check
-        start_index: Index to start checking from (default: level.index + 1)
-        
-    Returns:
-        Tuple of (sweep_index, opposite_close) or None if not swept
-        opposite_close: True if candle closed in opposite direction
     """
+    import numpy as np
+    
     start = start_index if start_index is not None else level.index + 1
     
-    for i in range(start, len(df)):
-        candle = df.iloc[i]
+    if start >= len(df):
+        return None
         
-        if level.level_type == "high":
-            # Check if high was swept
-            if candle['high'] > level.price:
-                # Check if candle closed bearish (opposite direction)
-                opposite_close = is_bearish_candle(candle)
-                return (i, opposite_close)
-        
-        else:  # level_type == "low"
-            # Check if low was swept
-            if candle['low'] < level.price:
-                # Check if candle closed bullish (opposite direction)
-                opposite_close = is_bullish_candle(candle)
-                return (i, opposite_close)
+    prices = df.iloc[start:]
     
-    return None
-
-
-def detect_sweep_with_opposite_close(
+    if level.level_type == "high":
+        sweeps = (prices['high'] > level.price).values
+        if sweeps.any():
+            idx_rel = sweeps.argmax()
+            i = start + idx_rel
+            candle = df.iloc[i]
+            return (i, is_bearish_candle(candle))
+    else:  # level_type == "low"
+        sweeps = (prices['low'] < level.price).values
+        if sweeps.any():
+            idx_rel = sweeps.argmax()
+            i = start + idx_rel
+            candle = df.iloc[i]
+            return (i, is_bullish_candle(candle))
+            
+def detect_liquidity_sweep_first_candle(
     df: pd.DataFrame,
     level: LiquidityLevel,
     start_index: Optional[int] = None
@@ -368,44 +376,43 @@ def detect_mss(
     # First detect swing highs and lows
     levels = detect_liquidity_levels(df, lookback=3, lookforward=1)
     
+    closes = df['close'].values
+    highs = df['high'].values
+    lows = df['low'].values
+    
     for level in levels:
-        # Look for break after the level formed
-        for i in range(level.index + 2, len(df)):
-            candle = df.iloc[i]
+        start_idx = level.index + 2
+        if start_idx >= len(df):
+            continue
             
-            if level.level_type == "high":
-                # Bullish MSS - break above swing high
-                if require_body_close:
-                    broke = candle['close'] > level.price
-                else:
-                    broke = candle['high'] > level.price
-                
-                if broke:
-                    mss_list.append(MSS(
-                        index=i,
-                        datetime=df.index[i],
-                        direction=Direction.BULLISH,
-                        break_price=level.price,
-                        confirmation_close=candle['close']
-                    ))
-                    break
-            
-            else:  # swing low
-                # Bearish MSS - break below swing low
-                if require_body_close:
-                    broke = candle['close'] < level.price
-                else:
-                    broke = candle['low'] < level.price
-                
-                if broke:
-                    mss_list.append(MSS(
-                        index=i,
-                        datetime=df.index[i],
-                        direction=Direction.BEARISH,
-                        break_price=level.price,
-                        confirmation_close=candle['close']
-                    ))
-                    break
+        if level.level_type == "high":
+            # Bullish MSS - break above swing high
+            search_vals = closes[start_idx:] if require_body_close else highs[start_idx:]
+            breaks = search_vals > level.price
+            if breaks.any():
+                idx_rel = breaks.argmax()
+                i = start_idx + idx_rel
+                mss_list.append(MSS(
+                    index=i,
+                    datetime=pd.Timestamp(df.index[i]),
+                    direction=Direction.BULLISH,
+                    break_price=level.price,
+                    confirmation_close=closes[i]
+                ))
+        else:  # swing low
+            # Bearish MSS - break below swing low
+            search_vals = closes[start_idx:] if require_body_close else lows[start_idx:]
+            breaks = search_vals < level.price
+            if breaks.any():
+                idx_rel = breaks.argmax()
+                i = start_idx + idx_rel
+                mss_list.append(MSS(
+                    index=i,
+                    datetime=pd.Timestamp(df.index[i]),
+                    direction=Direction.BEARISH,
+                    break_price=level.price,
+                    confirmation_close=closes[i]
+                ))
     
     return mss_list
 

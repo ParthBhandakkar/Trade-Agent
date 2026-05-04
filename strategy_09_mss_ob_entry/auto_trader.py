@@ -4,7 +4,7 @@ Strategy 09 — MSS + Order Block: AUTO TRADER (Crypto + Forex)
 
 Scans for fresh Strategy 09 signals and **automatically executes trades**:
   • Crypto → Binance Futures (Testnet by default)
-  • Forex  → XM Global MT5 (Demo account)
+  • Forex  → MT5 (Exness when MT5_* credentials are configured)
 
 Stop-Loss Logic
 ~~~~~~~~~~~~~~~
@@ -25,7 +25,7 @@ Take-Profit: Single TP at 1.5R risk-reward.
 Credentials
 ~~~~~~~~~~~
   • Binance Testnet keys: from project root ``.env``
-  • XM MT5 Demo: from project root ``.env``
+  • MT5 / Exness: from project root ``.env`` (or the already logged-in terminal)
   • Email config: from project root ``.env``
 
 Run
@@ -67,15 +67,12 @@ sys.path.insert(0, str(REPO_ROOT / "scripts"))
 from scripts.utils.env_loader import load_root_env               # noqa: E402
 
 load_root_env(REPO_ROOT)
-os.environ["TV_SOURCE_TZ"] = os.getenv("TV_SOURCE_TZ", "Asia/Kolkata").strip() or "Asia/Kolkata"
 
 from strategy import (                                        # noqa: E402
     MSSOrderBlockStrategy, MSSOB_Signal, DailyBias,
     MSSConfirmation, OBEntrySetup, BiasType,
     format_signal_for_jsonl,
 )
-from crypto_backtester import CryptoDataFetcher, CRYPTO_PAIRS  # noqa: E402
-from forex_backtester import ForexDataFetcher, FOREX_PAIRS     # noqa: E402
 from email_notifier import EmailNotifier                       # noqa: E402
 from phase_logger import PhaseLogger                           # noqa: E402
 from scripts.utils.indicators import Direction, OrderBlock     # noqa: E402
@@ -179,6 +176,26 @@ BINANCE_PAIR_CONFIG = {
     "INJUSDT":   {"pp": 3, "qp": 1, "mq": 0.1},
     "OPUSDT":    {"pp": 4, "qp": 0, "mq": 1},
 }
+
+CRYPTO_PAIRS = [
+    "BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT",
+    "ADAUSDT", "DOGEUSDT", "AVAXUSDT", "DOTUSDT", "LINKUSDT",
+    "LTCUSDT", "ATOMUSDT", "UNIUSDT", "ETCUSDT", "XLMUSDT",
+    "NEARUSDT", "AAVEUSDT", "FILUSDT", "APTUSDT",
+    "INJUSDT", "OPUSDT",
+]
+
+FOREX_PAIRS = [
+    "EURUSD", "GBPUSD", "USDJPY", "USDCHF",
+    "AUDUSD", "NZDUSD", "USDCAD",
+    "EURGBP", "EURJPY", "EURCHF", "EURAUD", "EURCAD", "EURNZD",
+    "GBPJPY", "GBPCHF", "GBPAUD", "GBPCAD", "GBPNZD",
+    "AUDJPY", "AUDNZD", "AUDCAD", "AUDCHF",
+    "NZDJPY", "NZDCAD", "NZDCHF",
+    "CADJPY", "CADCHF",
+    "CHFJPY",
+    "XAUUSD",
+]
 
 
 # ============================================================================
@@ -383,6 +400,173 @@ def _append_jsonl(path: Path, record: Dict[str, Any]) -> None:
 def _is_jpy_pair(symbol: str) -> bool:
     """Check if symbol is a JPY cross (pips = 0.01 instead of 0.0001)."""
     return "JPY" in symbol.upper()
+
+
+def _get_mt5_credentials() -> Tuple[int, str, str]:
+    """Prefer generic Exness MT5 credentials, fallback to legacy XM keys."""
+    login_raw = (
+        os.getenv("MT5_LOGIN", "").strip()
+        or os.getenv("XM_MT5_LOGIN", "0").strip()
+    )
+    password = (
+        os.getenv("MT5_PASSWORD", "").strip()
+        or os.getenv("XM_MT5_PASSWORD", "").strip()
+    )
+    server = (
+        os.getenv("MT5_SERVER", "").strip()
+        or os.getenv("XM_MT5_SERVER", "XMGlobal-MT5 3").strip()
+    )
+    try:
+        login = int(login_raw) if login_raw else 0
+    except ValueError:
+        login = 0
+    return login, password, server
+
+
+# ============================================================================
+# MT5 MARKET DATA FETCHER
+# ============================================================================
+
+class MT5DataFetcher:
+    """Fetch OHLCV candles directly from the logged-in MT5 terminal."""
+
+    _INTERVALS = {
+        "1m": "TIMEFRAME_M1",
+        "3m": "TIMEFRAME_M3",
+        "5m": "TIMEFRAME_M5",
+        "15m": "TIMEFRAME_M15",
+        "1h": "TIMEFRAME_H1",
+        "4h": "TIMEFRAME_H4",
+    }
+
+    def __init__(self, market: str = "FOREX"):
+        self.market = market
+        self.mt5 = None
+        self.connected = False
+        self.login, self.password, self.server = _get_mt5_credentials()
+        self._cache: Dict[str, pd.DataFrame] = {}
+        self._symbol_cache: Dict[str, str] = {}
+        self.connect()
+
+    def connect(self) -> bool:
+        self.connected = False
+        try:
+            import MetaTrader5 as mt5
+            self.mt5 = mt5
+            if not mt5.initialize():
+                logger.error(f"MT5 data init failed: {mt5.last_error()}")
+                return False
+            if self.login and self.password:
+                if not mt5.login(login=self.login, password=self.password, server=self.server):
+                    logger.error(f"MT5 data login failed: {mt5.last_error()}")
+                    return False
+            info = mt5.account_info()
+            if info is None:
+                logger.error(f"MT5 data account unavailable: {mt5.last_error()}")
+                return False
+            self.connected = True
+            logger.info(
+                f"MT5 data source connected: {info.server} | "
+                f"{'Demo' if info.trade_mode == mt5.ACCOUNT_TRADE_MODE_DEMO else 'LIVE'}"
+            )
+            return True
+        except ImportError:
+            logger.error("MetaTrader5 library not installed - MT5 data disabled")
+            return False
+        except Exception as e:
+            logger.error(f"MT5 data connect failed: {e}")
+            return False
+
+    def ensure_connected(self) -> bool:
+        if self.connected and self.mt5 is not None:
+            try:
+                if self.mt5.account_info() is not None:
+                    return True
+            except Exception:
+                pass
+        return self.connect()
+
+    def _candidate_symbols(self, symbol: str) -> List[str]:
+        sym = symbol.upper()
+        candidates = [sym]
+        if sym.endswith("USDT"):
+            candidates.append(sym[:-4] + "USD")
+        candidates.extend([f"{c}m" for c in list(candidates)])
+        candidates.extend([f"{c}.m" for c in list(candidates) if not c.endswith(".m")])
+        return list(dict.fromkeys(candidates))
+
+    def _resolve_symbol(self, symbol: str) -> Optional[str]:
+        key = symbol.upper()
+        if key in self._symbol_cache:
+            return self._symbol_cache[key]
+        mt5 = self.mt5
+        if mt5 is None:
+            return None
+
+        for candidate in self._candidate_symbols(symbol):
+            if mt5.symbol_select(candidate, True):
+                self._symbol_cache[key] = candidate
+                return candidate
+
+        search_key = key[:-4] + "USD" if key.endswith("USDT") else key
+        matches = mt5.symbols_get(f"*{search_key}*") or []
+        for item in matches:
+            name = getattr(item, "name", "")
+            if name and mt5.symbol_select(name, True):
+                self._symbol_cache[key] = name
+                return name
+
+        logger.warning(f"MT5 symbol not found for {symbol}")
+        return None
+
+    def fetch_ohlcv(
+        self,
+        symbol: str,
+        interval: str,
+        n_bars: int = 5000,
+        force_refresh: bool = False,
+    ) -> Optional[pd.DataFrame]:
+        cache_key = f"{symbol}_{interval}_{n_bars}"
+        if not force_refresh and cache_key in self._cache:
+            return self._cache[cache_key]
+        if not self.ensure_connected() or self.mt5 is None:
+            return None
+
+        tf_attr = self._INTERVALS.get(interval.lower())
+        if tf_attr is None:
+            logger.error(f"Unknown interval: {interval}")
+            return None
+        timeframe = getattr(self.mt5, tf_attr, None)
+        if timeframe is None:
+            logger.error(f"MT5 timeframe unavailable: {tf_attr}")
+            return None
+
+        mt5_symbol = self._resolve_symbol(symbol)
+        if mt5_symbol is None:
+            return None
+
+        try:
+            bars = max(1, int(n_bars))
+            logger.info(f"    {interval} ({bars} bars, MT5 {mt5_symbol})...")
+            rates = self.mt5.copy_rates_from_pos(mt5_symbol, timeframe, 0, bars)
+            if rates is None or len(rates) == 0:
+                logger.warning(f"No MT5 rates for {symbol} {interval}: {self.mt5.last_error()}")
+                return None
+
+            df = pd.DataFrame(rates)
+            df["datetime"] = pd.to_datetime(df["time"], unit="s", utc=True)
+            df.set_index("datetime", inplace=True)
+            volume_col = "tick_volume" if "tick_volume" in df.columns else "real_volume"
+            df["volume"] = df[volume_col] if volume_col in df.columns else 0
+            df = df[["open", "high", "low", "close", "volume"]].sort_index()
+            self._cache[cache_key] = df
+            return df
+        except Exception as e:
+            logger.error(f"MT5 fetch error {symbol} {interval}: {e}")
+            return None
+
+    def clear_cache(self):
+        self._cache.clear()
 
 
 # ============================================================================
@@ -974,16 +1158,15 @@ class BinanceExecutor:
 # ============================================================================
 
 class MT5Executor:
-    """Thin wrapper around MetaTrader5 for XM Global demo."""
+    """Thin wrapper around MetaTrader5 for forex trade execution."""
 
     def __init__(self):
         self.mt5 = None
-        self.login = int(os.getenv("XM_MT5_LOGIN", "0"))
-        self.password = os.getenv("XM_MT5_PASSWORD", "")
-        self.server = os.getenv("XM_MT5_SERVER", "XMGlobal-MT5 3")
+        self.login, self.password, self.server = _get_mt5_credentials()
         self.connected = False
         self.account_leverage: int = 1  # Queried on connect
         self._last_keepalive_ts: float = 0.0
+        self._symbol_cache: Dict[str, str] = {}
 
     def connect(self) -> bool:
         self.connected = False
@@ -1000,7 +1183,7 @@ class MT5Executor:
                     return False
             self.connected = True
             info = mt5.account_info()
-            self.account_leverage = info.leverage  # e.g. 1000 for XM Ultra Low
+            self.account_leverage = info.leverage
             logger.info(
                 f"✅ MT5 connected: {info.name} | "
                 f"Balance: {info.balance} {info.currency} | "
@@ -1060,9 +1243,34 @@ class MT5Executor:
             return []
 
     def _normalize_symbol(self, symbol: str) -> str:
-        """Convert OANDA-style 'EURUSD' to MT5-style if needed.
-        XM uses plain symbols like EURUSD, GBPUSD, XAUUSD."""
-        return symbol.upper()
+        """Resolve strategy symbols to broker MT5 symbols, including suffixes."""
+        requested = symbol.upper()
+        if requested in self._symbol_cache:
+            return self._symbol_cache[requested]
+        mt5 = self.mt5
+        if mt5 is None:
+            return requested
+
+        candidates = [requested]
+        if requested.endswith("USDT"):
+            candidates.append(requested[:-4] + "USD")
+        candidates.extend([f"{c}m" for c in list(candidates)])
+        candidates.extend([f"{c}.m" for c in list(candidates) if not c.endswith(".m")])
+
+        for candidate in list(dict.fromkeys(candidates)):
+            if mt5.symbol_select(candidate, True):
+                self._symbol_cache[requested] = candidate
+                return candidate
+
+        search_key = requested[:-4] + "USD" if requested.endswith("USDT") else requested
+        matches = mt5.symbols_get(f"*{search_key}*") or []
+        for item in matches:
+            name = getattr(item, "name", "")
+            if name and mt5.symbol_select(name, True):
+                self._symbol_cache[requested] = name
+                return name
+
+        return requested
 
     def _get_direct_fx_rate(self, from_ccy: str, to_ccy: str) -> Optional[float]:
         """Direct/inverse MT5 symbol lookup only (no triangulation).
@@ -1925,8 +2133,8 @@ def main() -> int:
 
     # ── Strategy + Data Fetchers ──────────────────────────────────
     strategy = MSSOrderBlockStrategy()
-    crypto_fetcher = CryptoDataFetcher() if scan_crypto else None
-    forex_fetcher = ForexDataFetcher() if scan_forex else None
+    crypto_fetcher = MT5DataFetcher("CRYPTO") if scan_crypto else None
+    forex_fetcher = MT5DataFetcher("FOREX") if scan_forex else None
     notifier = EmailNotifier()
     phase_log = PhaseLogger(THIS_DIR / "phase_logs" / "auto_trader")
 
@@ -1980,9 +2188,9 @@ def main() -> int:
     print("  STRATEGY 09 — MSS + OB  |  AUTO TRADER")
     print("═" * 62)
     print(f"  Crypto:         {n_c} pairs  (Binance {'Testnet' if binance else 'OFF'})")
-    print(f"  Forex:          {n_f} pairs  (MT5 {'Demo' if mt5_exec else 'OFF'})")
+    print(f"  Forex:          {n_f} pairs  (MT5 {'ON' if mt5_exec else 'OFF'})")
     print(f"  Fresh Window:   {args.fresh_window} min")
-    print(f"  TV Source TZ:   {os.environ.get('TV_SOURCE_TZ', 'Asia/Kolkata')}")
+    print(f"  Data Source:    MT5 / Exness")
     print(f"  Crypto Margin:  ${args.crypto_margin} × MAX leverage (per symbol)")
     print(f"  Forex Margin:   ₹{args.forex_margin}  (account lev: 1:{mt5_exec.account_leverage if mt5_exec else 'N/A'})")
     print(f"  Min Quality:    {args.min_quality}")

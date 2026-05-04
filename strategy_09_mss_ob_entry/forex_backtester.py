@@ -3,7 +3,7 @@ Strategy 09: MSS + Order Block Entry — Forex Backtester
 ========================================================
 
 Backtests the MSS + OB strategy on forex pairs using
-OANDA data via TradingView.
+Exness data via MetaTrader 5.
 
 Usage:
     python forex_backtester.py
@@ -17,8 +17,6 @@ import json
 import logging
 import argparse
 import time
-import tempfile
-import multiprocessing
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, asdict
@@ -26,7 +24,6 @@ from pathlib import Path
 
 import pandas as pd
 import pytz
-import requests
 from tqdm import tqdm
 
 # Add parent directory to path
@@ -45,21 +42,14 @@ from strategy import (
 )
 from scripts.utils.indicators import Direction
 
-try:
-    from tvDatafeed import TvDatafeed, Interval
-except ImportError:
-    print("ERROR: tvDatafeed not installed.")
-    print("pip install git+https://github.com/rongardF/tvdatafeed.git")
-    sys.exit(1)
-
 IST = pytz.timezone("Asia/Kolkata")
 UTC = pytz.UTC
-TV_SOURCE_TZ_NAME = os.environ.get("TV_SOURCE_TZ", "Asia/Kolkata").strip() or "Asia/Kolkata"
+MT5_SOURCE_TZ_NAME = os.environ.get("MT5_SOURCE_TZ", "UTC").strip() or "UTC"
 try:
-    TV_SOURCE_TZ = pytz.timezone(TV_SOURCE_TZ_NAME)
+    MT5_SOURCE_TZ = pytz.timezone(MT5_SOURCE_TZ_NAME)
 except Exception:
-    TV_SOURCE_TZ_NAME = "Asia/Kolkata"
-    TV_SOURCE_TZ = IST
+    MT5_SOURCE_TZ_NAME = "UTC"
+    MT5_SOURCE_TZ = UTC
 
 logging.basicConfig(
     level=logging.INFO,
@@ -88,137 +78,128 @@ FOREX_PAIRS = [
     "XAUUSD",
 ]
 
-INTERVALS = {
-    "1m": Interval.in_1_minute,
-    "3m": Interval.in_3_minute,
-    "5m": Interval.in_5_minute,
-    "15m": Interval.in_15_minute,
-    "1h": Interval.in_1_hour,
-    "4h": Interval.in_4_hour,
+# ============================================================================
+# DATA FETCHING (MetaTrader 5 / Exness)
+# ============================================================================
+
+MT5_INTERVAL_NAMES = {
+    "1m": "TIMEFRAME_M1",
+    "3m": "TIMEFRAME_M3",
+    "5m": "TIMEFRAME_M5",
+    "15m": "TIMEFRAME_M15",
+    "1h": "TIMEFRAME_H1",
+    "4h": "TIMEFRAME_H4",
 }
-
-
-# ============================================================================
-# DATA FETCHING (multiprocessing for timeout safety)
-# ============================================================================
-
-def _resolve_auth_token(session_id: str) -> Optional[str]:
-    """Convert a TradingView browser sessionid cookie into the websocket auth_token."""
-    import re
-    try:
-        session = requests.Session()
-        session.cookies.set('sessionid', session_id, domain='.tradingview.com')
-        resp = session.get(
-            'https://www.tradingview.com/chart/',
-            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-                     'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0'},
-            timeout=30,
-        )
-        m = re.search(r'"auth_token":"([^"]+)"', resp.text)
-        if m:
-            return m.group(1)
-        logger.warning("Could not extract auth_token from TradingView chart page")
-    except Exception as e:
-        logger.warning(f"Failed to resolve auth_token from sessionid: {e}")
-    return None
-
-
-def _subprocess_fetch(symbol, exchange, interval_str, n_bars, result_file,
-                      tv_username=None, tv_password=None, tv_session_token=None):
-    """Top-level function for multiprocessing: fetch data and write CSV."""
-    try:
-        if tv_session_token:
-            tv = TvDatafeed()
-            tv.token = tv_session_token
-        elif tv_username and tv_password:
-            tv = TvDatafeed(username=tv_username, password=tv_password)
-        else:
-            tv = TvDatafeed()
-        interval_map = {
-            "in_1_minute": Interval.in_1_minute,
-            "in_3_minute": Interval.in_3_minute,
-            "in_5_minute": Interval.in_5_minute,
-            "in_15_minute": Interval.in_15_minute,
-            "in_1_hour": Interval.in_1_hour,
-            "in_4_hour": Interval.in_4_hour,
-        }
-        tv_interval = interval_map.get(interval_str)
-        df = tv.get_hist(symbol=symbol, exchange=exchange,
-                         interval=tv_interval, n_bars=n_bars)
-        if df is not None and not df.empty:
-            df.to_csv(result_file)
-    except Exception:
-        pass
 
 
 class ForexDataFetcher:
     def __init__(self):
         self._cache: Dict[str, pd.DataFrame] = {}
-        self._tv_auth_token: Optional[str] = None
-        self._tv_username: Optional[str] = None
-        self._tv_password: Optional[str] = None
+        self._mt5 = None
+        self._connected = False
 
-        logger.info("TvDatafeed source timezone: %s", TV_SOURCE_TZ_NAME)
+        self._login = int(os.getenv("MT5_LOGIN", os.getenv("XM_MT5_LOGIN", "0")) or 0)
+        self._password = os.getenv("MT5_PASSWORD", os.getenv("XM_MT5_PASSWORD", ""))
+        self._server = os.getenv("MT5_SERVER", os.getenv("XM_MT5_SERVER", ""))
+        self._symbol_suffix = os.getenv(
+            "MT5_SYMBOL_SUFFIX",
+            os.getenv("EXNESS_MT5_SYMBOL_SUFFIX", ""),
+        ).strip()
 
-        # Load TradingView credentials from env
-        session_id = os.environ.get("TV_SESSION_TOKEN", "").strip()
-        if session_id:
-            logger.info("Resolving TradingView auth_token from sessionid cookie...")
-            self._tv_auth_token = _resolve_auth_token(session_id)
-            if self._tv_auth_token:
-                logger.info(f"✅ TvDatafeed: AUTH TOKEN resolved (len={len(self._tv_auth_token)})")
-            else:
-                logger.warning("❌ Could not resolve auth_token — falling back to nologin")
+        self._source_tz_name = os.getenv("MT5_SOURCE_TZ", "UTC").strip() or "UTC"
+        self._source_tz = MT5_SOURCE_TZ
+
+        logger.info("MT5 source timezone: %s", self._source_tz_name)
+        if self._symbol_suffix:
+            logger.info("MT5 symbol suffix enabled: %s", self._symbol_suffix)
+
+        self.connect()
+
+    def connect(self) -> bool:
+        try:
+            import MetaTrader5 as mt5
+        except ImportError:
+            logger.error("MetaTrader5 library not installed. Install MetaTrader5 first.")
+            return False
+
+        self._mt5 = mt5
+        if not mt5.initialize():
+            logger.error("MT5 init failed: %s", mt5.last_error())
+            return False
+
+        if self._login and self._password:
+            if not mt5.login(login=self._login, password=self._password, server=self._server or None):
+                logger.error("MT5 login failed: %s", mt5.last_error())
+                mt5.shutdown()
+                return False
+
+        info = mt5.account_info()
+        if info is None:
+            logger.warning("MT5 initialized but account_info() returned None")
         else:
-            self._tv_username = os.environ.get("TV_USERNAME", "").strip() or None
-            self._tv_password = os.environ.get("TV_PASSWORD", "").strip() or None
-            if self._tv_username:
-                logger.info(f"TvDatafeed: using LOGIN mode (user={self._tv_username})")
-            else:
-                logger.info("TvDatafeed: using NOLOGIN mode (limited 5M history)")
+            logger.info(
+                "✅ MT5 connected: %s | Balance: %s %s | Leverage: 1:%s",
+                info.name,
+                info.balance,
+                info.currency,
+                getattr(info, "leverage", "?")
+            )
 
-    def _fetch_with_timeout(self, symbol, exchange, tv_interval, n_bars,
-                            timeout=20) -> Optional[pd.DataFrame]:
-        """Spawn a separate process for the TvDatafeed call with hard timeout."""
-        interval_name = tv_interval.name if hasattr(tv_interval, 'name') else str(tv_interval)
+        self._connected = True
+        return True
 
-        tmp = tempfile.NamedTemporaryFile(suffix=".csv", delete=False)
-        tmp_path = tmp.name
-        tmp.close()
-
-        if os.path.exists(tmp_path):
-            os.remove(tmp_path)
-
-        proc = multiprocessing.Process(
-            target=_subprocess_fetch,
-            args=(symbol, exchange, interval_name, n_bars, tmp_path,
-                  self._tv_username, self._tv_password,
-                  self._tv_auth_token),
-        )
-        proc.start()
-        proc.join(timeout=timeout)
-
-        if proc.is_alive():
-            logger.warning(f"Timeout ({timeout}s) fetching {symbol} "
-                           f"{interval_name} ({n_bars} bars) — killing")
-            proc.terminate()
-            proc.join(timeout=5)
-            if proc.is_alive():
-                proc.kill()
-                proc.join(timeout=3)
-
-        if os.path.exists(tmp_path):
+    def ensure_connected(self) -> bool:
+        if self._connected and self._mt5 is not None:
             try:
-                df = pd.read_csv(tmp_path, index_col=0, parse_dates=True)
-                return df
+                if self._mt5.account_info() is not None:
+                    return True
             except Exception:
-                return None
-            finally:
-                try:
-                    os.remove(tmp_path)
-                except OSError:
-                    pass
-        return None
+                pass
+
+        self._connected = False
+        try:
+            if self._mt5 is not None:
+                self._mt5.shutdown()
+        except Exception:
+            pass
+        return self.connect()
+
+    def _timeframe(self, interval: str):
+        if self._mt5 is None:
+            return None
+        attr = MT5_INTERVAL_NAMES.get(interval.lower())
+        if attr is None:
+            return None
+        return getattr(self._mt5, attr, None)
+
+    def _resolve_symbol(self, symbol: str) -> Optional[str]:
+        if self._mt5 is None:
+            return None
+
+        base = (symbol or "").upper().strip()
+        if not base:
+            return None
+
+        candidates = [base]
+        if self._symbol_suffix:
+            candidates.append(f"{base}{self._symbol_suffix}")
+
+        try:
+            symbols = self._mt5.symbols_get() or []
+            available = {getattr(s, "name", "") for s in symbols}
+        except Exception:
+            available = set()
+
+        for candidate in candidates:
+            if candidate in available:
+                return candidate
+            try:
+                if self._mt5.symbol_select(candidate, True):
+                    return candidate
+            except Exception:
+                pass
+
+        return candidates[0] if candidates[0] in available else None
 
     def fetch_ohlcv(
         self,
@@ -231,55 +212,69 @@ class ForexDataFetcher:
         if not force_refresh and cache_key in self._cache:
             return self._cache[cache_key]
 
-        tv_interval = INTERVALS.get(interval.lower())
-        if tv_interval is None:
-            logger.error(f"Unknown interval: {interval}")
+        if not self.ensure_connected():
             return None
 
-        n_bars_candidates = sorted(
+        timeframe = self._timeframe(interval)
+        if timeframe is None:
+            logger.error("Unknown interval: %s", interval)
+            return None
+
+        mt5_symbol = self._resolve_symbol(symbol)
+        if not mt5_symbol:
+            logger.error("Symbol not available in MT5: %s", symbol)
+            return None
+
+        bars_candidates = sorted(
             set([int(n_bars), min(int(n_bars), 1500), 800, 400]),
             reverse=True,
         )
 
         for attempt in range(1, 5):
             try:
-                bars = n_bars_candidates[
-                    min(attempt - 1, len(n_bars_candidates) - 1)
-                ]
-                logger.info(f"    {interval} ({bars} bars, attempt {attempt})...")
-                df = self._fetch_with_timeout(
-                    symbol, "OANDA", tv_interval, bars, timeout=20,
-                )
-                if df is None or df.empty:
-                    time.sleep(1.5)
+                bars = bars_candidates[min(attempt - 1, len(bars_candidates) - 1)]
+                logger.info("    %s (%s bars, attempt %s)...", interval, bars, attempt)
+
+                rates = self._mt5.copy_rates_from_pos(mt5_symbol, timeframe, 0, bars)
+                if rates is None or len(rates) == 0:
+                    time.sleep(1.0)
                     continue
 
-                df = df.reset_index()
-                df.columns = [c.lower() for c in df.columns]
-                if 'datetime' in df.columns:
-                    df['datetime'] = pd.to_datetime(df['datetime'])
-                    df.set_index('datetime', inplace=True)
+                df = pd.DataFrame(rates)
+                if df.empty or "time" not in df.columns:
+                    time.sleep(1.0)
+                    continue
+
+                df["datetime"] = pd.to_datetime(df["time"], unit="s", utc=True)
+                df.set_index("datetime", inplace=True)
+
                 if df.index.tz is None:
-                    df.index = df.index.tz_localize(TV_SOURCE_TZ)
+                    df.index = df.index.tz_localize(self._source_tz)
                 df.index = df.index.tz_convert(UTC)
-                ohlcv = ['open', 'high', 'low', 'close', 'volume']
+
+                if "volume" not in df.columns:
+                    if "tick_volume" in df.columns:
+                        df["volume"] = df["tick_volume"]
+                    elif "real_volume" in df.columns:
+                        df["volume"] = df["real_volume"]
+
+                ohlcv = ["open", "high", "low", "close", "volume"]
                 df = df[[c for c in ohlcv if c in df.columns]]
                 self._cache[cache_key] = df
                 return df
             except Exception as e:
-                logger.error(f"Fetch error {symbol} {interval} "
-                             f"attempt {attempt}: {e}")
-                time.sleep(2.0)
+                logger.error("Fetch error %s %s attempt %s: %s", symbol, interval, attempt, e)
+                time.sleep(1.5)
+
         return None
 
     def fetch_multi_timeframe(self, symbol: str) -> Dict[str, pd.DataFrame]:
         data = {}
-        logger.info(f"  Fetching data for {symbol}...")
-        data['4h'] = self.fetch_ohlcv(symbol, '4h', 200)
-        data['1h'] = self.fetch_ohlcv(symbol, '1h', 500)
-        data['15m'] = self.fetch_ohlcv(symbol, '15m', 1000)
-        n_5m = 3000 if self._tv_auth_token else 800
-        data['5m'] = self.fetch_ohlcv(symbol, '5m', n_5m)
+        logger.info("  Fetching MT5 data for %s...", symbol)
+        data["4h"] = self.fetch_ohlcv(symbol, "4h", 200)
+        data["1h"] = self.fetch_ohlcv(symbol, "1h", 500)
+        data["15m"] = self.fetch_ohlcv(symbol, "15m", 1000)
+        data["5m"] = self.fetch_ohlcv(symbol, "5m", 3000)
         return data
 
     def clear_cache(self):

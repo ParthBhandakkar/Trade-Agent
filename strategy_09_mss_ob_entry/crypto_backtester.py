@@ -47,10 +47,15 @@ from scripts.utils.indicators import Direction
 
 try:
     from tvDatafeed import TvDatafeed, Interval
+    TVDATAFEED_AVAILABLE = True
 except ImportError:
-    print("ERROR: tvDatafeed not installed.")
-    print("pip install git+https://github.com/rongardF/tvdatafeed.git")
-    sys.exit(1)
+    TvDatafeed = None
+    Interval = None
+    TVDATAFEED_AVAILABLE = False
+    logger = logging.getLogger(__name__)
+    logger.warning(
+        "tvDatafeed not installed; crypto fetching will be disabled until it is installed."
+    )
 
 IST = pytz.timezone("Asia/Kolkata")
 UTC = pytz.UTC
@@ -78,12 +83,12 @@ CRYPTO_PAIRS = [
 ]
 
 INTERVALS = {
-    "1m": Interval.in_1_minute,
-    "3m": Interval.in_3_minute,
-    "5m": Interval.in_5_minute,
-    "15m": Interval.in_15_minute,
-    "1h": Interval.in_1_hour,
-    "4h": Interval.in_4_hour,
+    "1m": getattr(Interval, "in_1_minute", None) if Interval else None,
+    "3m": getattr(Interval, "in_3_minute", None) if Interval else None,
+    "5m": getattr(Interval, "in_5_minute", None) if Interval else None,
+    "15m": getattr(Interval, "in_15_minute", None) if Interval else None,
+    "1h": getattr(Interval, "in_1_hour", None) if Interval else None,
+    "4h": getattr(Interval, "in_4_hour", None) if Interval else None,
 }
 
 
@@ -153,6 +158,11 @@ class CryptoDataFetcher:
         self._tv_auth_token: Optional[str] = None
         self._tv_username: Optional[str] = None
         self._tv_password: Optional[str] = None
+        self._enabled = TVDATAFEED_AVAILABLE
+
+        if not self._enabled:
+            logger.warning("CryptoDataFetcher disabled because tvDatafeed is unavailable.")
+            return
 
         logger.info("TvDatafeed source timezone: %s", TV_SOURCE_TZ_NAME)
 
@@ -179,6 +189,8 @@ class CryptoDataFetcher:
         Spawn a *separate process* for the TvDatafeed call so we can
         hard-kill it on timeout (threads can't be interrupted on Windows).
         """
+        if not self._enabled:
+            return None
 
         # Map Interval enum to a serialisable string
         interval_name = tv_interval.name if hasattr(tv_interval, 'name') else str(tv_interval)
@@ -229,6 +241,9 @@ class CryptoDataFetcher:
         n_bars: int = 5000,
         force_refresh: bool = False,
     ) -> Optional[pd.DataFrame]:
+        if not self._enabled:
+            return None
+
         cache_key = f"{symbol}_{interval}_{n_bars}"
         if not force_refresh and cache_key in self._cache:
             return self._cache[cache_key]
@@ -276,6 +291,9 @@ class CryptoDataFetcher:
         return None
 
     def fetch_multi_timeframe(self, symbol: str) -> Dict[str, pd.DataFrame]:
+        if not self._enabled:
+            return {"4h": None, "1h": None, "15m": None, "5m": None}
+
         data = {}
         logger.info(f"  Fetching data for {symbol}...")
         data['4h'] = self.fetch_ohlcv(symbol, '4h', 200)

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategy 09 — Backtest Dashboard</title>
+  <meta name="description" content="MSS + Order Block backtesting engine with multi-timeframe analysis">
+  <link rel="stylesheet" href="/static/styles.css?v=3">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-title">
+      <div class="logo">S9</div>
+      <h1>Backtest Dashboard <span>MSS + Order Block</span></h1>
+    </div>
+    <div class="header-status">
+      <div class="status-dot" id="statusDot"></div>
+      <span id="headerStatus">Ready</span>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Controls -->
+    <div class="controls-panel">
+      <div class="controls-row">
+        <div class="control-group">
+          <label>Symbol</label>
+          <div style="position:relative">
+            <input type="text" id="symbolInput" list="symbolList" placeholder="USDJPY or ALL"
+              style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text-primary);padding:10px 14px;font-family:'Inter',sans-serif;font-size:14px;outline:none;width:100%;text-transform:uppercase">
+            <datalist id="symbolList"></datalist>
+          </div>
+        </div>
+        <div class="control-group">
+          <label>Start Date</label>
+          <input type="date" id="startDate" value="2026-04-01">
+        </div>
+        <div class="control-group">
+          <label>End Date</label>
+          <input type="date" id="endDate" value="2026-04-22">
+        </div>
+        <button class="btn-run" id="btnRun" onclick="runBacktest()">
+          <div class="spinner"></div>
+          <span class="btn-text">▶ Run Backtest</span>
+        </button>
+      </div>
+      <div class="filters-row">
+        <label class="filter-toggle"><input type="checkbox" id="filterEma" checked> 4H EMA Trend</label>
+        <label class="filter-toggle"><input type="checkbox" id="filterKillzone" checked> Killzone Session</label>
+        <label class="filter-toggle"><input type="checkbox" id="filterLondon" checked> London Block</label>
+        <label class="filter-toggle"><input type="checkbox" id="filterBlacklist" checked> Crypto Blacklist</label>
+        <label class="filter-toggle"><input type="checkbox" id="autoFetch" checked> Auto-Fetch Missing</label>
+        <label class="filter-toggle" title="Logs every STALE TAP / reject — very slow for ALL symbols and huge logs"><input type="checkbox" id="verboseLogs"> Verbose logs</label>
+        <div style="flex:1"></div>
+        <label class="filter-toggle">
+          <span style="color:var(--text-muted);font-size:12px">Min Quality:</span>
+          <select id="minQuality" style="background:var(--bg-secondary);border:1px solid var(--border);border-radius:6px;color:var(--text-primary);padding:4px 8px;font-size:13px;font-family:'Inter',sans-serif">
+            <option value="0">0</option><option value="30">30</option>
+            <option value="50" selected>50</option><option value="60">60</option><option value="70">70</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <!-- Error Banner -->
+    <div id="errorBanner" class="error-banner" style="display:none">
+      <span>⚠</span><span id="errorText"></span>
+    </div>
+
+    <!-- Live Log Panel -->
+    <div class="log-panel" id="logPanel">
+      <div class="log-header">
+        <h3>🖥 Backend Logs</h3>
+        <div style="display:flex;gap:8px;align-items:center">
+          <span class="log-count" id="logCount">0 lines</span>
+          <button class="log-btn" onclick="clearLogs()">Clear</button>
+          <button class="log-btn" id="logToggle" onclick="toggleLogs()">▼ Collapse</button>
+        </div>
+      </div>
+      <div class="log-body" id="logBody">
+        <div class="log-content" id="logContent"></div>
+      </div>
+    </div>
+
+    <!-- Results Container -->
+    <div id="resultsContainer" style="display:none" class="fade-in">
+      <div id="aggregateBanner" class="aggregate-banner" style="display:none"></div>
+      <div id="symbolTabs" class="symbol-tabs" style="display:none"></div>
+      <div id="statsGrid" class="stats-grid"></div>
+
+      <div class="chart-panel">
+        <h3>📈 Equity Curve</h3>
+        <div class="chart-container"><canvas id="equityChart"></canvas></div>
+      </div>
+
+      <div id="rejectionsPanel" class="chart-panel" style="display:none">
+        <h3>🛡️ Rejection Breakdown</h3>
+        <div id="rejectionsGrid" class="rejections-grid"></div>
+      </div>
+
+      <div class="table-panel">
+        <div class="table-header">
+          <h3 id="tradesTitle">📋 Trades</h3>
+          <div class="table-filters">
+            <button class="active" onclick="filterTrades('all', this)">All</button>
+            <button onclick="filterTrades('executed', this)">Executed</button>
+            <button onclick="filterTrades('tp', this)">Winners</button>
+            <button onclick="filterTrades('sl', this)">Losers</button>
+            <button onclick="filterTrades('rejected', this)">Rejected</button>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr>
+              <th>#</th><th>Symbol</th><th>Direction</th><th>Entry Time</th>
+              <th>Entry</th><th>SL</th><th>TP</th><th>Q</th>
+              <th>Outcome</th><th>PnL %</th><th>PnL ₹</th><th>Exit Time</th><th>Details</th>
+            </tr></thead>
+            <tbody id="tradesBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="emptyState" class="empty-state">
+      <div class="icon">📊</div>
+      <h3>Select a symbol and date range to begin</h3>
+      <p>Type any symbol — if data isn't present, it auto-fetches from Google Drive</p>
+    </div>
+  </div>
+
+  <script src="/static/app.js?v=6"></script>
+</body>
+</html>

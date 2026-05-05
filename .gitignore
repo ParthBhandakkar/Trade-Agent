@@ -53,3 +53,5 @@ logs/
 # Selenium/Browser
 geckodriver.log
 chromedriver.log
+
+data/

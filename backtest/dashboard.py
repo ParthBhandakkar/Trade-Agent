@@ -268,6 +268,14 @@ class TradeResponse(BaseModel):
     bias_reason: str
     ema_detail: str
     killzone: str
+    # Phase timeline
+    sweep_time: Optional[str] = None
+    swept_level_time: Optional[str] = None
+    mss_time: Optional[str] = None
+    ob_time: Optional[str] = None
+    tap_time: Optional[str] = None
+    ob_top: Optional[float] = None
+    ob_bottom: Optional[float] = None
 
 
 class SymbolResult(BaseModel):
@@ -375,6 +383,13 @@ def _build_symbol_result(result: BacktestResult, market: str) -> SymbolResult:
             rejected=t.rejected, reject_reason=t.reject_reason,
             bias_reason=t.bias_reason, ema_detail=t.ema_detail,
             killzone=t.killzone,
+            sweep_time=_format_dt(t.sweep_time),
+            swept_level_time=_format_dt(t.swept_level_time),
+            mss_time=_format_dt(t.mss_time),
+            ob_time=_format_dt(t.ob_time),
+            tap_time=_format_dt(t.tap_time),
+            ob_top=round(t.ob_top, 6) if t.ob_top else None,
+            ob_bottom=round(t.ob_bottom, 6) if t.ob_bottom else None,
         ))
 
     total_pnl_inr = round(sum(t.pnl_inr for t in executed), 2)

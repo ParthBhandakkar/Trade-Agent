@@ -756,3 +756,75 @@ tr:hover td { background: rgba(99, 102, 241, 0.03); }
   0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(245,158,11,0.4); }
   50% { opacity: 0.6; box-shadow: 0 0 0 6px rgba(245,158,11,0); }
 }
+
+/* ── Clickable Trade Rows ──────────────────────────────────────────── */
+.clickable-row { cursor: pointer; transition: background 0.15s; }
+.clickable-row:hover { background: rgba(99,102,241,0.08); }
+
+/* ── Trade Detail Panel ────────────────────────────────────────────── */
+.trade-detail-panel {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  margin-top: 16px;
+  animation: fadeIn 0.2s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.detail-header {
+  display: flex; align-items: center; gap: 16px; margin-bottom: 24px;
+}
+.detail-header h3 { margin: 0; font-size: 18px; color: var(--text-primary); }
+.back-btn {
+  background: rgba(99,102,241,0.12); border: 1px solid rgba(99,102,241,0.3);
+  color: #a5b4fc; padding: 8px 16px; border-radius: 8px; cursor: pointer;
+  font-size: 13px; font-weight: 500; transition: all 0.15s;
+}
+.back-btn:hover { background: rgba(99,102,241,0.25); color: #c7d2fe; }
+
+.detail-summary {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px; margin-bottom: 28px;
+}
+.detail-card {
+  background: rgba(30,41,59,0.5); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px 16px; text-align: center;
+}
+.dc-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+.dc-value { font-size: 16px; font-weight: 600; font-family: 'JetBrains Mono', monospace; }
+
+.timeline-title { color: var(--text-primary); font-size: 15px; margin-bottom: 16px; }
+
+.timeline { position: relative; padding-left: 0; }
+.timeline-item {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding-bottom: 20px; position: relative;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-connector { position: relative; width: 0; }
+.connector-line {
+  position: absolute; left: 20px; top: 38px; bottom: -20px;
+  width: 2px; background: rgba(148,163,184,0.2);
+}
+.timeline-dot {
+  width: 40px; height: 40px; border-radius: 50%; display: flex;
+  align-items: center; justify-content: center; font-size: 18px;
+  flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.timeline-body { flex: 1; padding-top: 4px; }
+.timeline-phase { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.timeline-time { font-size: 12px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; margin-bottom: 4px; }
+.timeline-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.4; }
+
+.detail-extra {
+  margin-top: 24px; padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.extra-row {
+  display: flex; gap: 12px; padding: 6px 0;
+  font-size: 13px; color: var(--text-secondary);
+}
+.extra-label {
+  min-width: 100px; color: var(--text-muted); font-weight: 500;
+}

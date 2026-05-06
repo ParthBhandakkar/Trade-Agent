@@ -138,6 +138,10 @@ class BacktestTrade:
     bias_reason: str = ""
     mss_time: Optional[datetime] = None
     ob_time: Optional[datetime] = None
+    # Phase timeline (for detailed trade view)
+    sweep_time: Optional[datetime] = None        # 4H sweep candle timestamp
+    swept_level_time: Optional[datetime] = None  # Candle that was swept (source)
+    tap_time: Optional[datetime] = None          # 5M tap bar timestamp
     # Filter info
     ema_detail: str = ""
     killzone: str = ""
@@ -1012,6 +1016,9 @@ def run_backtest(
                     bias_reason=tr.bias.reason,
                     mss_time=tr.mss.timestamp,
                     ob_time=ob_entry.order_block.datetime,
+                    sweep_time=tr.bias.sweep_timestamp,
+                    swept_level_time=tr.bias.source_timestamp,
+                    tap_time=ob_entry.timestamp,
                     ema_detail=ema_detail,
                     killzone=kz_detail,
                 )

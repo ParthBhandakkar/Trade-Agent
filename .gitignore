@@ -55,3 +55,6 @@ geckodriver.log
 chromedriver.log
 
 data/
+credentials.json
+backtest/results/
+backtest/01_01_2007-03_05_2026.csv

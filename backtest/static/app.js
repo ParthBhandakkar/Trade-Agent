@@ -266,6 +266,7 @@ function renderSymbolTabs(results) {
 function renderCombinedView(results) {
   allTrades = [];
   results.forEach(r => { allTrades = allTrades.concat(r.trades); });
+  closeTradeDetail();
   const executed = allTrades.filter(t => !t.rejected);
   const wins = executed.filter(t => (t.pnl_inr || 0) > 0);
   const losses = executed.filter(t => (t.pnl_inr || 0) < 0);
@@ -293,6 +294,7 @@ function renderCombinedView(results) {
 
 function renderSymbolResult(result) {
   allTrades = result.trades;
+  closeTradeDetail();
   renderStatsGrid(result);
   renderEquityChart(result.equity_curve, result.equity_curve_inr);
   renderRejections(result.rejection_breakdown);
@@ -425,8 +427,9 @@ function renderTradesTable(trades) {
     const pnlInrStr = t.rejected ? '—' : `<span style="color:${inrVal >= 0 ? 'var(--green)' : 'var(--red)'}">${inrVal >= 0 ? '+' : ''}₹${inrVal.toFixed(0)}</span>`;
     const pfmt = t.market === 'FOREX' ? 5 : 6;
     const detail = t.rejected ? truncate(t.reject_reason, 40) : t.sl_reason ? truncate(t.sl_reason, 40) : '';
+    const clickable = !t.rejected ? `class="clickable-row" onclick="showTradeDetail(${i})"` : '';
 
-    return `<tr data-rejected="${t.rejected}" data-outcome="${t.outcome || ''}">
+    return `<tr data-rejected="${t.rejected}" data-outcome="${t.outcome || ''}" ${clickable}>
       <td>${i+1}</td><td style="font-weight:600;color:var(--text-primary)">${t.symbol}</td><td>${dirBadge}</td>
       <td style="color:var(--text-secondary)">${t.entry_time ? formatTime(t.entry_time) : '—'}</td>
       <td>${t.entry_price.toFixed(pfmt)}</td><td>${t.rejected ? '—' : t.sl_price.toFixed(pfmt)}</td><td>${t.rejected ? '—' : t.tp_price.toFixed(pfmt)}</td>
@@ -434,6 +437,155 @@ function renderTradesTable(trades) {
       <td style="color:var(--text-muted)">${t.rejected ? '—' : (t.exit_time ? formatTime(t.exit_time) : '—')}</td>
       <td style="color:var(--text-muted);font-family:'Inter',sans-serif;font-size:11px" title="${detail}">${detail}</td></tr>`;
   }).join('');
+}
+
+// ── Trade Detail View ────────────────────────────────────────────────
+function showTradeDetail(idx) {
+  const t = allTrades[idx];
+  if (!t || t.rejected) return;
+
+  document.getElementById('tablePanel').style.display = 'none';
+  const panel = document.getElementById('tradeDetailPanel');
+  panel.style.display = 'block';
+
+  const dirLabel = t.direction === 'bullish' ? 'LONG' : 'SHORT';
+  const dirColor = t.direction === 'bullish' ? 'var(--green)' : 'var(--red)';
+  const pnlColor = (t.pnl_inr || 0) >= 0 ? 'var(--green)' : 'var(--red)';
+  const pfmt = t.market === 'FOREX' ? 5 : 6;
+
+  document.getElementById('detailTitle').innerHTML =
+    `Trade #${idx+1} — <span style="color:${dirColor}">${t.symbol} ${dirLabel}</span>`;
+
+  const events = [];
+
+  if (t.swept_level_time) {
+    events.push({
+      time: t.swept_level_time,
+      icon: '🎯',
+      phase: '4H Liquidity Level',
+      desc: `Liquidity level formed (the candle that was later swept)`,
+      color: '#818cf8',
+    });
+  }
+  if (t.sweep_time) {
+    events.push({
+      time: t.sweep_time,
+      icon: '💧',
+      phase: '4H Sweep',
+      desc: `Liquidity sweep candle — ${t.bias_reason || 'bias established'}`,
+      color: '#f472b6',
+    });
+  }
+  if (t.mss_time) {
+    events.push({
+      time: t.mss_time,
+      icon: '🔄',
+      phase: '1H MSS',
+      desc: `Market Structure Shift confirmed on 1H`,
+      color: '#38bdf8',
+    });
+  }
+  if (t.ob_time) {
+    events.push({
+      time: t.ob_time,
+      icon: '📦',
+      phase: '15M Order Block',
+      desc: `OB formed: ${t.ob_top ? t.ob_top.toFixed(pfmt) : '?'} – ${t.ob_bottom ? t.ob_bottom.toFixed(pfmt) : '?'}`,
+      color: '#fbbf24',
+    });
+  }
+  if (t.tap_time) {
+    events.push({
+      time: t.tap_time,
+      icon: '👆',
+      phase: '5M Tap',
+      desc: `Price tapped Order Block zone`,
+      color: '#a78bfa',
+    });
+  }
+  if (t.entry_time) {
+    events.push({
+      time: t.entry_time,
+      icon: '🚀',
+      phase: 'Entry',
+      desc: `Entered @ ${t.entry_price.toFixed(pfmt)}`,
+      color: '#34d399',
+    });
+  }
+  if (t.exit_time) {
+    const outcomeLabel = t.outcome === 'TP' ? 'Take Profit hit' : t.outcome === 'TSL' ? 'Trailing SL hit (profit locked)' : t.outcome === 'SL' ? 'Stop Loss hit' : 'Timeout / Force-close';
+    events.push({
+      time: t.exit_time,
+      icon: t.outcome === 'TP' || t.outcome === 'TSL' ? '✅' : t.outcome === 'SL' ? '❌' : '⏱',
+      phase: 'Exit',
+      desc: `${outcomeLabel} @ ${t.exit_price ? t.exit_price.toFixed(pfmt) : '?'}`,
+      color: (t.pnl_inr || 0) >= 0 ? '#10b981' : '#ef4444',
+    });
+  }
+
+  // Sort chronologically
+  events.sort((a, b) => new Date(a.time) - new Date(b.time));
+
+  const timeline = events.map((e, i) => `
+    <div class="timeline-item">
+      <div class="timeline-connector">${i < events.length - 1 ? '<div class="connector-line"></div>' : ''}</div>
+      <div class="timeline-dot" style="background:${e.color}">${e.icon}</div>
+      <div class="timeline-body">
+        <div class="timeline-phase" style="color:${e.color}">${e.phase}</div>
+        <div class="timeline-time">${formatTime(e.time)}</div>
+        <div class="timeline-desc">${e.desc}</div>
+      </div>
+    </div>
+  `).join('');
+
+  const summaryCards = `
+    <div class="detail-summary">
+      <div class="detail-card">
+        <div class="dc-label">Direction</div>
+        <div class="dc-value" style="color:${dirColor}">${dirLabel}</div>
+      </div>
+      <div class="detail-card">
+        <div class="dc-label">Entry</div>
+        <div class="dc-value">${t.entry_price.toFixed(pfmt)}</div>
+      </div>
+      <div class="detail-card">
+        <div class="dc-label">Stop Loss</div>
+        <div class="dc-value" style="color:var(--red)">${t.sl_price.toFixed(pfmt)}</div>
+      </div>
+      <div class="detail-card">
+        <div class="dc-label">Take Profit</div>
+        <div class="dc-value" style="color:var(--green)">${t.tp_price.toFixed(pfmt)}</div>
+      </div>
+      <div class="detail-card">
+        <div class="dc-label">Quality</div>
+        <div class="dc-value">${t.quality}</div>
+      </div>
+      <div class="detail-card">
+        <div class="dc-label">PnL</div>
+        <div class="dc-value" style="color:${pnlColor}">${(t.pnl_inr||0)>=0?'+':''}₹${(t.pnl_inr||0).toFixed(0)} (${t.pnl_pct>=0?'+':''}${t.pnl_pct.toFixed(4)}%)</div>
+      </div>
+    </div>
+  `;
+
+  const extraInfo = `
+    <div class="detail-extra">
+      ${t.ema_detail ? `<div class="extra-row"><span class="extra-label">EMA Filter</span><span>${t.ema_detail}</span></div>` : ''}
+      ${t.killzone ? `<div class="extra-row"><span class="extra-label">Killzone</span><span>${t.killzone}</span></div>` : ''}
+      ${t.sl_reason ? `<div class="extra-row"><span class="extra-label">SL Reason</span><span>${t.sl_reason}</span></div>` : ''}
+    </div>
+  `;
+
+  document.getElementById('detailContent').innerHTML = summaryCards + `
+    <h4 class="timeline-title">📅 Event Timeline (Chronological)</h4>
+    <div class="timeline">${timeline}</div>
+  ` + extraInfo;
+}
+
+function closeTradeDetail() {
+  const dp = document.getElementById('tradeDetailPanel');
+  const tp = document.getElementById('tablePanel');
+  if (dp) dp.style.display = 'none';
+  if (tp) tp.style.display = 'block';
 }
 
 function filterTrades(filter, btnEl) {

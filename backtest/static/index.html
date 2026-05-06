@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strategy 09 — Backtest Dashboard</title>
   <meta name="description" content="MSS + Order Block backtesting engine with multi-timeframe analysis">
-  <link rel="stylesheet" href="/static/styles.css?v=3">
+  <link rel="stylesheet" href="/static/styles.css?v=4">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 </head>
 <body>
@@ -101,7 +101,7 @@
         <div id="rejectionsGrid" class="rejections-grid"></div>
       </div>
 
-      <div class="table-panel">
+      <div class="table-panel" id="tablePanel">
         <div class="table-header">
           <h3 id="tradesTitle">📋 Trades</h3>
           <div class="table-filters">
@@ -123,6 +123,15 @@
           </table>
         </div>
       </div>
+
+      <!-- Trade Detail Panel (shown when a trade row is clicked) -->
+      <div id="tradeDetailPanel" class="trade-detail-panel" style="display:none">
+        <div class="detail-header">
+          <button class="back-btn" onclick="closeTradeDetail()">← Back to Trades</button>
+          <h3 id="detailTitle">Trade Detail</h3>
+        </div>
+        <div id="detailContent" class="detail-content"></div>
+      </div>
     </div>
 
     <div id="emptyState" class="empty-state">
@@ -132,6 +141,6 @@
     </div>
   </div>
 
-  <script src="/static/app.js?v=6"></script>
+  <script src="/static/app.js?v=7"></script>
 </body>
 </html>

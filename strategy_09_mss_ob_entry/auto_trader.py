@@ -1455,8 +1455,21 @@ class MT5Executor:
             )
             return info.volume_min
 
-        # Both margin_inr and margin_1lot are in INR — divide directly
-        raw_lot = margin_inr / margin_1lot
+        account_info = mt5.account_info()
+        account_ccy = (account_info.currency if account_info else "INR").upper()
+        target_margin = margin_inr
+        if account_ccy != "INR":
+            conv = self._get_fx_rate("INR", account_ccy)
+            if conv is not None and conv > 0:
+                target_margin = margin_inr * conv
+            else:
+                logger.warning(
+                    f"[{sym}] Could not convert target margin INR->{account_ccy}; "
+                    f"using raw target value {margin_inr}"
+                )
+
+        # order_calc_margin returns account currency, so size against that.
+        raw_lot = target_margin / margin_1lot
 
         # Round down to nearest volume step
         vol_step = info.volume_step
@@ -1469,15 +1482,16 @@ class MT5Executor:
         lot = min(lot, info.volume_max)
 
         logger.info(
-            f"[{sym}] margin target ₹{margin_inr} "
-            f"| margin/lot ₹{margin_1lot:.2f} | raw_lot={raw_lot:.4f} "
+            f"[{sym}] margin target ₹{margin_inr} ({target_margin:.2f} {account_ccy}) "
+            f"| margin/lot {margin_1lot:.2f} {account_ccy} | raw_lot={raw_lot:.4f} "
             f"| vol_step={vol_step} | final lot={lot}"
         )
 
         if lot <= info.volume_min and raw_lot < info.volume_min:
             logger.warning(
                 f"[{sym}] ⚠ LOT CLAMPED to volume_min ({info.volume_min})! "
-                f"margin/lot=₹{margin_1lot:.2f} is too high for ₹{margin_inr} target. "
+                f"margin/lot={margin_1lot:.2f} {account_ccy} is too high for "
+                f"₹{margin_inr} target. "
                 f"This means the position is much smaller than intended. "
                 f"Possible causes: pair-specific leverage restriction, "
                 f"wrong FX conversion, or order_calc_margin failure."
@@ -1544,6 +1558,34 @@ class MT5Executor:
                 "type_time": mt5.ORDER_TIME_GTC,
                 "type_filling": mt5.ORDER_FILLING_IOC,
             }
+            account_info = mt5.account_info()
+            check = mt5.order_check(req)
+            if account_info is not None:
+                result.update({
+                    "account_currency": getattr(account_info, "currency", None),
+                    "account_balance": getattr(account_info, "balance", None),
+                    "account_equity": getattr(account_info, "equity", None),
+                    "account_margin_free": getattr(account_info, "margin_free", None),
+                    "account_leverage": getattr(account_info, "leverage", None),
+                })
+            result.update({
+                "lot": lot_size,
+                "sl": sl_r,
+                "tp": tp_r,
+            })
+            if check is not None:
+                result["order_check"] = {
+                    "retcode": getattr(check, "retcode", None),
+                    "comment": getattr(check, "comment", None),
+                    "margin": getattr(check, "margin", None),
+                    "margin_free": getattr(check, "margin_free", None),
+                }
+                logger.info(
+                    f"[{sym}] order_check retcode={getattr(check, 'retcode', None)} "
+                    f"comment={getattr(check, 'comment', None)} "
+                    f"margin={getattr(check, 'margin', None)} "
+                    f"free_after={getattr(check, 'margin_free', None)}"
+                )
             res = mt5.order_send(req)
             if res is None:
                 result["error"] = f"order_send None: {mt5.last_error()}"

@@ -6,7 +6,7 @@ from typing import Optional
 class MT5Credentials:
     """MT5 connection credentials"""
     
-    def __init__(self, login: str, password: str, server: str):
+    def __init__(self, login: str = "", password: str = "", server: str = ""):
         self.login = login
         self.password = password
         self.server = server
@@ -14,9 +14,9 @@ class MT5Credentials:
     @classmethod
     def from_env(cls):
         """Load credentials from environment variables"""
-        login = os.getenv("MT5_LOGIN", "")
-        password = os.getenv("MT5_PASSWORD", "")
-        server = os.getenv("MT5_SERVER", "")
+        login = (os.getenv("MT5_LOGIN", "") or "").strip()
+        password = (os.getenv("MT5_PASSWORD", "") or "").strip()
+        server = (os.getenv("MT5_SERVER", "") or "").strip()
         return cls(login, password, server)
 
 class MT5Client:
@@ -38,15 +38,17 @@ class MT5Client:
                 print(f"MT5 initialization failed")
                 return False
             
-            # Attempt login
-            if not mt5.login(
-                login=int(self.credentials.login),
-                password=self.credentials.password,
-                server=self.credentials.server
-            ):
-                print(f"MT5 login failed: {mt5.last_error()}")
-                mt5.shutdown()
-                return False
+            # Attempt login only when credentials are provided.
+            # This allows using the already-open MT5 terminal session.
+            if self.credentials.login:
+                if not mt5.login(
+                    login=int(self.credentials.login),
+                    password=self.credentials.password,
+                    server=self.credentials.server or None,
+                ):
+                    print(f"MT5 login failed: {mt5.last_error()}")
+                    mt5.shutdown()
+                    return False
             
             self._initialized = True
             return True

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strat2 Backtester</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="toolbar" aria-label="Backtest controls">
+        <div class="brand">
+          <h1>Strat2 Backtester</h1>
+          <p>Historical replay using cached MT5 candles and the live strategy rules.</p>
+        </div>
+        <form id="runForm" class="controls">
+          <label>
+            Symbols
+            <select id="symbols" multiple size="8"></select>
+          </label>
+          <label>
+            Start date
+            <input id="start" type="date" required>
+          </label>
+          <label>
+            End date
+            <input id="end" type="date" required>
+          </label>
+          <label>
+            Risk INR
+            <input id="risk" type="number" min="1" step="50" value="500">
+          </label>
+          <label>
+            Min quality
+            <input id="quality" type="number" min="0" max="100" step="1" value="78">
+          </label>
+          <label class="check">
+            <input id="refresh" type="checkbox">
+            Refresh MT5 cache
+          </label>
+          <button id="runButton" type="submit">Run Backtest</button>
+        </form>
+      </section>
+
+      <section class="summary" id="summary" aria-live="polite">
+        <div>
+          <span>Trades</span>
+          <strong id="sumTrades">0</strong>
+        </div>
+        <div>
+          <span>Win rate</span>
+          <strong id="sumWinRate">0%</strong>
+        </div>
+        <div>
+          <span>Total R</span>
+          <strong id="sumR">0.00</strong>
+        </div>
+        <div>
+          <span>Total INR</span>
+          <strong id="sumInr">0</strong>
+        </div>
+      </section>
+
+      <section class="status" id="status">Select symbols and run a test.</section>
+
+      <section class="results">
+        <table>
+          <thead>
+            <tr>
+              <th>Entry</th>
+              <th>Symbol</th>
+              <th>Side</th>
+              <th>Quality</th>
+              <th>Entry</th>
+              <th>Exit</th>
+              <th>P/L</th>
+            </tr>
+          </thead>
+          <tbody id="tradesBody"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <dialog id="tradeDialog">
+      <div class="dialogHead">
+        <h2 id="dialogTitle">Trade</h2>
+        <button id="closeDialog" type="button" aria-label="Close">×</button>
+      </div>
+      <div id="dialogMeta" class="dialogMeta"></div>
+      <ol id="timeline" class="timeline"></ol>
+    </dialog>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+
